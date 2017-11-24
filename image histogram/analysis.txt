@@ -1,0 +1,1110 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  us/call  us/call  name    
+ 97.37      1.48     1.48    32771    45.16    45.16  measure(histogram&, int)
+  0.66      1.49     0.01                             stbi__idct_simd(unsigned char*, int, short*)
+  0.66      1.50     0.01                             stbi__YCbCr_to_RGB_simd(unsigned char*, unsigned char const*, unsigned char const*, unsigned char const*, int, int)
+  0.66      1.51     0.01                             stbi__jpeg_decode_block(stbi__jpeg*, short*, stbi__huffman*, stbi__huffman*, short*, int, unsigned short*)
+  0.66      1.52     0.01                             stbi__grow_buffer_unsafe(stbi__jpeg*)
+  0.00      1.52     0.00   766084     0.00     0.00  ImGui_ImplGlfwGL3_CharCallback(GLFWwindow*, unsigned int)
+  0.00      1.52     0.00   146252     0.00     0.00  ImGui_ImplGlfwGL3_ScrollCallback(GLFWwindow*, double, double)
+  0.00      1.52     0.00    39004     0.00     0.00  ImGui::Columns(int, char const*, bool)
+  0.00      1.52     0.00    19298     0.00     0.00  ImDrawList::PrimReserve(int, int)
+  0.00      1.52     0.00    15936     0.00     0.00  ImHash(void const*, int, unsigned int)
+  0.00      1.52     0.00    14472     0.00     0.00  ImDrawList::PathArcToFast(ImVec2 const&, float, int, int)
+  0.00      1.52     0.00    14020     0.00     0.00  ImVector<ImVec2>::push_back(ImVec2 const&)
+  0.00      1.52     0.00    11083     0.00     0.00  __gcc_deregister_frame
+  0.00      1.52     0.00    10403     0.00     0.00  ImGui::IsMouseHoveringRect(ImVec2 const&, ImVec2 const&, bool)
+  0.00      1.52     0.00     8008     0.00     0.00  ImGui::ItemAdd(ImRect const&, unsigned int const*)
+  0.00      1.52     0.00     8008     0.00     0.00  ImGui::ItemSize(ImVec2 const&, float)
+  0.00      1.52     0.00     7920     0.00     0.00  ImDrawList::AddDrawCmd()
+  0.00      1.52     0.00     7343     0.00     0.00  ImDrawList::AddText(ImFont const*, float, ImVec2 const&, unsigned int, char const*, char const*, float, ImVec4 const*)
+  0.00      1.52     0.00     7236     0.00     0.00  ImDrawList::AddConvexPolyFilled(ImVec2 const*, int, unsigned int, bool)
+  0.00      1.52     0.00     7159     0.00     0.00  ImDrawList::UpdateTextureID()
+  0.00      1.52     0.00     7098     0.00     0.00  ImFont::CalcTextSizeA(float, float, float, char const*, char const*, char const**) const
+  0.00      1.52     0.00     7054     0.00     0.00  ImGui::IsHovered(ImRect const&, unsigned int, bool)
+  0.00      1.52     0.00     7054     0.00     0.00  ImFont::RenderText(ImDrawList*, float, ImVec2, unsigned int, ImVec4 const&, char const*, char const*, float, bool) const
+  0.00      1.52     0.00     6495     0.00     0.00  ImDrawList::UpdateClipRect()
+  0.00      1.52     0.00     6320     0.00     0.00  ImGui::ButtonBehavior(ImRect const&, unsigned int, bool*, bool*, int)
+  0.00      1.52     0.00     5961     0.00    45.16  ImGui::RenderTextClipped(ImVec2 const&, ImVec2 const&, char const*, char const*, ImVec2 const*, ImVec2 const&, ImRect const*)
+  0.00      1.52     0.00     5706     0.00     0.00  ImDrawList::AddRectFilled(ImVec2 const&, ImVec2 const&, unsigned int, float, int)
+  0.00      1.52     0.00     3794     0.00     0.00  ImDrawList::PushClipRect(ImVec2, ImVec2, bool)
+  0.00      1.52     0.00     3794     0.00     0.00  ImGui::PushClipRect(ImVec2 const&, ImVec2 const&, bool)
+  0.00      1.52     0.00     3505     0.00     0.00  ImDrawList::PathRect(ImVec2 const&, ImVec2 const&, float, int)
+  0.00      1.52     0.00     3179     0.00     0.00  void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::emplace_back<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&)
+  0.00      1.52     0.00     3148     0.00    92.82  ImGui::Selectable(char const*, bool, int, ImVec2 const&)
+  0.00      1.52     0.00     3148     0.00     0.00  ImGui::GetContentRegionMax()
+  0.00      1.52     0.00     3148     0.00     0.00  ImGuiTextFilter::PassFilter(char const*, char const*) const
+  0.00      1.52     0.00     3033     0.00     0.00  ImGui::SameLine(float, float)
+  0.00      1.52     0.00     2704     0.00     0.00  ImDrawList::Clear()
+  0.00      1.52     0.00     2701     0.00     0.00  ImDrawList::PushTextureID(void* const&)
+  0.00      1.52     0.00     2229     0.00     0.00  ImDrawList::AddImage(void*, ImVec2 const&, ImVec2 const&, ImVec2 const&, ImVec2 const&, unsigned int)
+  0.00      1.52     0.00     2229     0.00     0.00  ImGui::GetColorU32(ImVec4 const&)
+  0.00      1.52     0.00     2229     0.00     0.00  ImGui::Image(void*, ImVec2 const&, ImVec2 const&, ImVec2 const&, ImVec4 const&, ImVec4 const&)
+  0.00      1.52     0.00     1900     0.00     0.00  ImVector<ImGuiWindow*>::push_back(ImGuiWindow* const&)
+  0.00      1.52     0.00     1897     0.00     0.00  ImDrawList::PopClipRect()
+  0.00      1.52     0.00     1897     0.00     0.00  ImGui::PopClipRect()
+  0.00      1.52     0.00     1897     0.00    45.16  ImGui::FindWindowByName(char const*)
+  0.00      1.52     0.00     1897     0.00     0.00  ImGui::ColorConvertFloat4ToU32(ImVec4 const&)
+  0.00      1.52     0.00     1897     0.00     0.00  ImGui::End()
+  0.00      1.52     0.00     1897     0.00   314.85  ImGui::Begin(char const*, bool*, ImVec2 const&, float, int)
+  0.00      1.52     0.00     1897     0.00     0.00  ImGui::LogFinish()
+  0.00      1.52     0.00     1756     0.00     0.00  ImGui::RenderFrame(ImVec2, ImVec2, unsigned int, bool, float)
+  0.00      1.52     0.00     1611     0.00     0.00  ImGui::GetIO()
+  0.00      1.52     0.00     1608     0.00     0.00  ImDrawList::AddTriangleFilled(ImVec2 const&, ImVec2 const&, ImVec2 const&, unsigned int)
+  0.00      1.52     0.00     1608     0.00    45.16  ImGui::RenderCollapseTriangle(ImVec2, bool, float)
+  0.00      1.52     0.00     1538     0.00     0.00  ImGui::CalcTextSize(char const*, char const*, bool, float)
+  0.00      1.52     0.00     1450     0.00     0.00  void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_emplace_back_aux<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&)
+  0.00      1.52     0.00     1190     0.00     0.00  ImGui::MemFree(void*)
+  0.00      1.52     0.00     1154     0.00     0.00  ImGui::MemAlloc(unsigned long long)
+  0.00      1.52     0.00     1093     0.00     0.00  ImGui::CalcItemSize(ImVec2, float, float)
+  0.00      1.52     0.00     1093     0.00    45.16  ImGui::TextUnformatted(char const*, char const*)
+  0.00      1.52     0.00     1093     0.00    45.16  ImGui::RenderTextWrapped(ImVec2, char const*, char const*, float)
+  0.00      1.52     0.00     1093     0.00    45.16  ImGui::Text(char const*, ...)
+  0.00      1.52     0.00     1093     0.00   141.81  ImGui::Render()
+  0.00      1.52     0.00      804     0.00   540.73  image_select[abi:cxx11](int)
+  0.00      1.52     0.00      804     0.00   405.51  ImGui_ImplGlfwGL3_NewFrame()
+  0.00      1.52     0.00      804     0.00   495.57  fs(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char const*)
+  0.00      1.52     0.00      804     0.00     0.00  ImGui_ImplGlfwGL3_RenderDrawLists(ImDrawData*)
+  0.00      1.52     0.00      804     0.00     0.00  ImDrawData::ScaleClipRects(ImVec2 const&)
+  0.00      1.52     0.00      804     0.00     0.00  ImDrawList::AddCircleFilled(ImVec2 const&, float, unsigned int, int)
+  0.00      1.52     0.00      804     0.00     0.00  ImDrawList::PushClipRectFullScreen()
+  0.00      1.52     0.00      804     0.00     0.00  ImDrawList::PathArcTo(ImVec2 const&, float, float, float, int)
+  0.00      1.52     0.00      804     0.00     0.00  ImGui::BeginPopup(char const*)
+  0.00      1.52     0.00      804     0.00    45.16  ImGui::CloseButton(unsigned int, ImVec2 const&, float)
+  0.00      1.52     0.00      804     0.00     0.00  ImGui::SetNextWindowSize(ImVec2 const&, int)
+  0.00      1.52     0.00      804     0.00   314.85  ImGui::Begin(char const*, bool*, int)
+  0.00      1.52     0.00      804     0.00     0.00  ImGui::Button(char const*, ImVec2 const&)
+  0.00      1.52     0.00      804     0.00   135.49  ImGui::ButtonEx(char const*, ImVec2 const&, int)
+  0.00      1.52     0.00      804     0.00   131.61  ImGui::EndFrame()
+  0.00      1.52     0.00      804     0.00   405.51  ImGui::NewFrame()
+  0.00      1.52     0.00      578     0.00     0.00  ImDrawList::AddRect(ImVec2 const&, ImVec2 const&, unsigned int, float, int, float)
+  0.00      1.52     0.00      445     0.00   225.81  ImGui::VSliderInt(char const*, ImVec2 const&, int*, int, int, char const*)
+  0.00      1.52     0.00      445     0.00   225.81  ImGui::VSliderFloat(char const*, ImVec2 const&, float*, float, float, char const*, float)
+  0.00      1.52     0.00      445     0.00    90.32  ImGui::SliderBehavior(ImRect const&, unsigned int, float*, float, float, float, int, int)
+  0.00      1.52     0.00      445     0.00     0.00  ImGui::ParseFormatPrecision(char const*, int)
+  0.00      1.52     0.00      439     0.00     0.00  ImGui::IsKeyPressed(int, bool)
+  0.00      1.52     0.00      335     0.00     0.00  ImGui::RoundScalar(float, int)
+  0.00      1.52     0.00      289     0.00     0.00  ImFormatString(char*, int, char const*, ...)
+  0.00      1.52     0.00      289     0.00     0.00  ImDrawList::AddPolyline(ImVec2 const*, int, unsigned int, bool, float, bool)
+  0.00      1.52     0.00      289     0.00   135.49  ImGuiTextFilter::Draw(char const*, float)
+  0.00      1.52     0.00      289     0.00   135.49  ImGui::InputTextEx(char const*, char*, int, ImVec2 const&, int, int (*)(ImGuiTextEditCallbackData*), void*)
+  0.00      1.52     0.00      289     0.00     0.00  ImGui::OpenPopupEx(char const*, bool)
+  0.00      1.52     0.00      289     0.00     0.00  ImGui::PushStyleVar(int, float)
+  0.00      1.52     0.00      289     0.00     0.00  ImGui::CalcItemWidth()
+  0.00      1.52     0.00      289     0.00     0.00  ImGui::FocusableItemRegister(ImGuiWindow*, bool, bool)
+  0.00      1.52     0.00      289     0.00     0.00  ImGui::EndPopup()
+  0.00      1.52     0.00      289     0.00     0.00  ImGui::OpenPopup(char const*)
+  0.00      1.52     0.00       48     0.00     0.00  ImTextCharFromUtf8(unsigned int*, char const*, char const*)
+  0.00      1.52     0.00       22     0.00     0.00  stbi_zlib_decode_malloc_guesssize_headerflag
+  0.00      1.52     0.00       21     0.00     0.00  ImGui::FocusWindow(ImGuiWindow*)
+  0.00      1.52     0.00        5     0.00     0.00  ImGuiTextFilter::Build()
+  0.00      1.52     0.00        5     0.00     0.00  ImGuiTextFilter::TextRange::split(char, ImVector<ImGuiTextFilter::TextRange>&)
+  0.00      1.52     0.00        4     0.00     0.00  ImDrawList::ClearFreeMemory()
+  0.00      1.52     0.00        4     0.00     0.00  ImGui::CloseCurrentPopup()
+  0.00      1.52     0.00        3     0.00     0.00  ImFileOpen(char const*, char const*)
+  0.00      1.52     0.00        3     0.00     0.00  ImDrawList::ImDrawList()
+  0.00      1.52     0.00        3     0.00     0.00  ImDrawList::~ImDrawList()
+  0.00      1.52     0.00        3     0.00    45.16  ImGuiWindow::ImGuiWindow(char const*)
+  0.00      1.52     0.00        3     0.00     0.00  ImGuiWindow::~ImGuiWindow()
+  0.00      1.52     0.00        3     0.00     0.00  ImGuiDrawContext::~ImGuiDrawContext()
+  0.00      1.52     0.00        1     0.00     0.00  ImFileLoadToMemory(char const*, char const*, int*, int)
+  0.00      1.52     0.00        1     0.00     0.00  ImGui_ImplGlfwGL3_Init(GLFWwindow*, bool)
+  0.00      1.52     0.00        1     0.00     0.00  ImGui_ImplGlfwGL3_CreateFontsTexture()
+  0.00      1.52     0.00        1     0.00     0.00  ImGui_ImplGlfwGL3_CreateDeviceObjects()
+  0.00      1.52     0.00        1     0.00     0.00  ImGui_ImplGlfwGL3_InvalidateDeviceObjects()
+  0.00      1.52     0.00        1     0.00     0.00  dirlist[abi:cxx11](char const*, int)
+  0.00      1.52     0.00        1     0.00     0.00  ImFontAtlas::ClearFonts()
+  0.00      1.52     0.00        1     0.00     0.00  ImFontAtlas::AddFontDefault(ImFontConfig const*)
+  0.00      1.52     0.00        1     0.00     0.00  ImFontAtlas::ClearInputData()
+  0.00      1.52     0.00        1     0.00     0.00  ImFontAtlas::GetTexDataAsRGBA32(unsigned char**, int*, int*, int*)
+  0.00      1.52     0.00        1     0.00     0.00  ImFontAtlas::RenderCustomTexData(int, void*)
+  0.00      1.52     0.00        1     0.00     0.00  ImFontAtlas::AddFontFromMemoryCompressedTTF(void const*, int, float, ImFontConfig const*, unsigned short const*)
+  0.00      1.52     0.00        1     0.00     0.00  ImFontAtlas::AddFontFromMemoryCompressedBase85TTF(char const*, float, ImFontConfig const*, unsigned short const*)
+  0.00      1.52     0.00        1     0.00     0.00  ImFontAtlas::Build()
+  0.00      1.52     0.00        1     0.00     0.00  ImFontAtlas::Clear()
+  0.00      1.52     0.00        1     0.00     0.00  ImFontAtlas::AddFont(ImFontConfig const*)
+  0.00      1.52     0.00        1     0.00     0.00  ImGuiTextFilter::ImGuiTextFilter(char const*)
+  0.00      1.52     0.00        1     0.00     0.00  ImGui::Shutdown()
+  0.00      1.52     0.00        1     0.00     0.00  ImFont::BuildLookupTable()
+  0.00      1.52     0.00        1     0.00     0.00  ImFont::GrowIndex(int)
+  0.00      1.52     0.00        1     0.00     0.00  ImFont::ImFont()
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2015 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 4 byte(s) for 0.66% of 1.52 seconds
+
+index % time    self  children    called     name
+                0.00    0.00       2/32771       AddWindowSettings(char const*) [33]
+                0.00    0.00       3/32771       ImGuiWindow::ImGuiWindow(char const*) [32]
+                0.00    0.00       4/32771       FindWindowSettings(char const*) [31]
+                0.00    0.00      49/32771       main [2]
+                0.01    0.00     289/32771       fs(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char const*) [5]
+                0.04    0.00     804/32771       ImGui::CloseButton(unsigned int, ImVec2 const&, float) [26]
+                0.04    0.00     867/32771       ImGui::InputTextEx(char const*, char*, int, ImVec2 const&, int, int (*)(ImGuiTextEditCallbackData*), void*) [25]
+                0.04    0.00     890/32771       ImGui::SliderBehavior(ImRect const&, unsigned int, float*, float, float, float, int, int) [23]
+                0.04    0.00     890/32771       ImGui::VSliderFloat(char const*, ImVec2 const&, float*, float, float, char const*, float) [15]
+                0.05    0.00    1089/32771       AddWindowToRenderList(ImVector<ImDrawList*>&, ImGuiWindow*) [22]
+                0.05    0.00    1089/32771       ImGui::Render() [11]
+                0.05    0.00    1093/32771       ImGui::RenderTextWrapped(ImVec2, char const*, char const*, float) [20]
+                0.07    0.00    1608/32771       ImGui::RenderCollapseTriangle(ImVec2, bool, float) [18]
+                0.07    0.00    1608/32771       ImGui::ButtonEx(char const*, ImVec2 const&, int) [12]
+                0.07    0.00    1614/32771       ImGui::NewFrame() [7]
+                0.09    0.00    1897/32771       ImGui::FindWindowByName(char const*) [17]
+                0.11    0.00    2343/32771       ImGui::EndFrame() [13]
+                0.15    0.00    3366/32771       ImGui::Selectable(char const*, bool, int, ImVec2 const&) [8]
+                0.27    0.00    5961/32771       ImGui::RenderTextClipped(ImVec2 const&, ImVec2 const&, char const*, char const*, ImVec2 const*, ImVec2 const&, ImRect const*) [9]
+                0.33    0.00    7305/32771       ImGui::Begin(char const*, bool*, ImVec2 const&, float, int) [3]
+[1]     97.4    1.48    0.00   32771         measure(histogram&, int) [1]
+                0.00    0.00      98/766084      ImGui_ImplGlfwGL3_CharCallback(GLFWwindow*, unsigned int) [252]
+                0.00    0.00      10/146252      ImGui_ImplGlfwGL3_ScrollCallback(GLFWwindow*, double, double) [253]
+                0.00    0.00      10/22          stbi_zlib_decode_malloc_guesssize_headerflag [34]
+                0.00    0.00       1/1           dirlist[abi:cxx11](char const*, int) [335]
+-----------------------------------------------
+                                                 <spontaneous>
+[2]     88.1    0.00    1.34                 main [2]
+                0.00    0.43     804/804         image_select[abi:cxx11](int) [4]
+                0.00    0.33     804/804         ImGui_ImplGlfwGL3_NewFrame() [6]
+                0.00    0.25     804/804         ImGui::Begin(char const*, bool*, int) [10]
+                0.00    0.11     804/1093        ImGui::Render() [11]
+                0.00    0.11     804/804         ImGui::ButtonEx(char const*, ImVec2 const&, int) [12]
+                0.00    0.10     445/445         ImGui::VSliderInt(char const*, ImVec2 const&, int*, int, int, char const*) [14]
+                0.00    0.00      49/32771       measure(histogram&, int) [1]
+                0.00    0.00    2229/2229        ImGui::Image(void*, ImVec2 const&, ImVec2 const&, ImVec2 const&, ImVec4 const&, ImVec4 const&) [284]
+                0.00    0.00    2229/3033        ImGui::SameLine(float, float) [279]
+                0.00    0.00     804/804         ImGui::SetNextWindowSize(ImVec2 const&, int) [305]
+                0.00    0.00     804/804         ImGui::Button(char const*, ImVec2 const&) [306]
+                0.00    0.00     804/1897        ImGui::End() [289]
+                0.00    0.00       1/1           ImGui_ImplGlfwGL3_Init(GLFWwindow*, bool) [331]
+                0.00    0.00       1/289         ImGui::OpenPopupEx(char const*, bool) [313]
+                0.00    0.00       1/289         ImGui::OpenPopup(char const*) [318]
+                0.00    0.00       1/146252      ImGui_ImplGlfwGL3_ScrollCallback(GLFWwindow*, double, double) [253]
+                0.00    0.00       1/22          stbi_zlib_decode_malloc_guesssize_headerflag [34]
+                0.00    0.00       1/1           ImGui_ImplGlfwGL3_InvalidateDeviceObjects() [334]
+                0.00    0.00       1/1           ImGui::Shutdown() [347]
+-----------------------------------------------
+                0.00    0.09     289/1897        BeginPopupEx(char const*, int) [16]
+                0.00    0.25     804/1897        ImGui::Begin(char const*, bool*, int) [10]
+                0.00    0.25     804/1897        ImGui::NewFrame() [7]
+[3]     39.3    0.00    0.60    1897         ImGui::Begin(char const*, bool*, ImVec2 const&, float, int) [3]
+                0.33    0.00    7305/32771       measure(histogram&, int) [1]
+                0.00    0.09    1897/1897        ImGui::FindWindowByName(char const*) [17]
+                0.00    0.07    1608/5961        ImGui::RenderTextClipped(ImVec2 const&, ImVec2 const&, char const*, char const*, ImVec2 const*, ImVec2 const&, ImRect const*) [9]
+                0.00    0.07    1608/1608        ImGui::RenderCollapseTriangle(ImVec2, bool, float) [18]
+                0.00    0.04     804/804         ImGui::CloseButton(unsigned int, ImVec2 const&, float) [26]
+                0.00    0.00       3/3           ImGuiWindow::ImGuiWindow(char const*) [32]
+                0.00    0.00    3794/3794        ImGui::PushClipRect(ImVec2 const&, ImVec2 const&, bool) [274]
+                0.00    0.00    3505/5706        ImDrawList::AddRectFilled(ImVec2 const&, ImVec2 const&, unsigned int, float, int) [272]
+                0.00    0.00    3216/14020       ImVector<ImVec2>::push_back(ImVec2 const&) [258]
+                0.00    0.00    2412/15936       ImHash(void const*, int, unsigned int) [256]
+                0.00    0.00    1900/1900        ImVector<ImGuiWindow*>::push_back(ImGuiWindow* const&) [285]
+                0.00    0.00    1897/2704        ImDrawList::Clear() [280]
+                0.00    0.00    1897/7920        ImDrawList::AddDrawCmd() [263]
+                0.00    0.00    1897/7159        ImDrawList::UpdateTextureID() [266]
+                0.00    0.00    1897/2701        ImDrawList::PushTextureID(void* const&) [281]
+                0.00    0.00    1897/1897        ImGui::ColorConvertFloat4ToU32(ImVec4 const&) [288]
+                0.00    0.00    1608/6320        ImGui::ButtonBehavior(ImRect const&, unsigned int, bool*, bool*, int) [271]
+                0.00    0.00    1608/14472       ImDrawList::PathArcToFast(ImVec2 const&, float, int, int) [257]
+                0.00    0.00    1608/7236        ImDrawList::AddConvexPolyFilled(ImVec2 const*, int, unsigned int, bool) [265]
+                0.00    0.00     578/578         ImDrawList::AddRect(ImVec2 const&, ImVec2 const&, unsigned int, float, int, float) [307]
+                0.00    0.00     481/10403       ImGui::IsMouseHoveringRect(ImVec2 const&, ImVec2 const&, bool) [260]
+                0.00    0.00       6/21          ImGui::FocusWindow(ImGuiWindow*) [320]
+-----------------------------------------------
+                0.00    0.43     804/804         main [2]
+[4]     28.6    0.00    0.43     804         image_select[abi:cxx11](int) [4]
+                0.00    0.40     804/804         fs(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char const*) [5]
+                0.00    0.04     804/1093        ImGui::Text(char const*, ...) [21]
+                0.00    0.00     804/3033        ImGui::SameLine(float, float) [279]
+-----------------------------------------------
+                0.00    0.40     804/804         image_select[abi:cxx11](int) [4]
+[5]     26.2    0.00    0.40     804         fs(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char const*) [5]
+                0.00    0.29    3148/3148        ImGui::Selectable(char const*, bool, int, ImVec2 const&) [8]
+                0.00    0.04     289/1093        ImGui::Render() [11]
+                0.00    0.04     289/289         ImGuiTextFilter::Draw(char const*, float) [24]
+                0.00    0.01     289/1093        ImGui::Text(char const*, ...) [21]
+                0.01    0.00     289/32771       measure(histogram&, int) [1]
+                0.00    0.00    3179/3179        void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::emplace_back<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&) [276]
+                0.00    0.00    3148/3148        ImGuiTextFilter::PassFilter(char const*, char const*) const [278]
+                0.00    0.00    1445/1450        void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_emplace_back_aux<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&) [295]
+                0.00    0.00     804/804         ImGui::BeginPopup(char const*) [304]
+                0.00    0.00     289/289         ImGui::EndPopup() [317]
+                0.00    0.00     288/289         ImGui::OpenPopupEx(char const*, bool) [313]
+                0.00    0.00     288/289         ImGui::OpenPopup(char const*) [318]
+                0.00    0.00       4/5           ImGuiTextFilter::Build() [321]
+                0.00    0.00       1/1           ImGuiTextFilter::ImGuiTextFilter(char const*) [346]
+-----------------------------------------------
+                0.00    0.33     804/804         main [2]
+[6]     21.4    0.00    0.33     804         ImGui_ImplGlfwGL3_NewFrame() [6]
+                0.00    0.33     804/804         ImGui::NewFrame() [7]
+                0.00    0.00     804/1611        ImGui::GetIO() [292]
+                0.00    0.00       1/1           ImGui_ImplGlfwGL3_CreateDeviceObjects() [333]
+-----------------------------------------------
+                0.00    0.33     804/804         ImGui_ImplGlfwGL3_NewFrame() [6]
+[7]     21.4    0.00    0.33     804         ImGui::NewFrame() [7]
+                0.00    0.25     804/1897        ImGui::Begin(char const*, bool*, ImVec2 const&, float, int) [3]
+                0.07    0.00    1614/32771       measure(histogram&, int) [1]
+                0.00    0.00     804/2704        ImDrawList::Clear() [280]
+                0.00    0.00     804/7920        ImDrawList::AddDrawCmd() [263]
+                0.00    0.00     804/7159        ImDrawList::UpdateTextureID() [266]
+                0.00    0.00     804/2701        ImDrawList::PushTextureID(void* const&) [281]
+                0.00    0.00     804/6495        ImDrawList::UpdateClipRect() [270]
+                0.00    0.00     804/804         ImDrawList::PushClipRectFullScreen() [302]
+                0.00    0.00     439/439         ImGui::IsKeyPressed(int, bool) [309]
+                0.00    0.00       1/1           ImFileLoadToMemory(char const*, char const*, int*, int) [330]
+-----------------------------------------------
+                0.00    0.29    3148/3148        fs(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char const*) [5]
+[8]     19.2    0.00    0.29    3148         ImGui::Selectable(char const*, bool, int, ImVec2 const&) [8]
+                0.15    0.00    3366/32771       measure(histogram&, int) [1]
+                0.00    0.14    3104/5961        ImGui::RenderTextClipped(ImVec2 const&, ImVec2 const&, char const*, char const*, ImVec2 const*, ImVec2 const&, ImRect const*) [9]
+                0.00    0.00    3148/15936       ImHash(void const*, int, unsigned int) [256]
+                0.00    0.00    3148/8008        ImGui::ItemSize(ImVec2 const&, float) [262]
+                0.00    0.00    3148/8008        ImGui::ItemAdd(ImRect const&, unsigned int const*) [261]
+                0.00    0.00    3148/3148        ImGui::GetContentRegionMax() [277]
+                0.00    0.00    3104/6320        ImGui::ButtonBehavior(ImRect const&, unsigned int, bool*, bool*, int) [271]
+                0.00    0.00     218/1756        ImGui::RenderFrame(ImVec2, ImVec2, unsigned int, bool, float) [291]
+                0.00    0.00       4/21          ImGui::FocusWindow(ImGuiWindow*) [320]
+                0.00    0.00       4/4           ImGui::CloseCurrentPopup() [324]
+-----------------------------------------------
+                0.00    0.02     445/5961        ImGui::VSliderFloat(char const*, ImVec2 const&, float*, float, float, char const*, float) [15]
+                0.00    0.04     804/5961        ImGui::ButtonEx(char const*, ImVec2 const&, int) [12]
+                0.00    0.07    1608/5961        ImGui::Begin(char const*, bool*, ImVec2 const&, float, int) [3]
+                0.00    0.14    3104/5961        ImGui::Selectable(char const*, bool, int, ImVec2 const&) [8]
+[9]     17.7    0.00    0.27    5961         ImGui::RenderTextClipped(ImVec2 const&, ImVec2 const&, char const*, char const*, ImVec2 const*, ImVec2 const&, ImRect const*) [9]
+                0.27    0.00    5961/32771       measure(histogram&, int) [1]
+                0.00    0.00    5961/7343        ImDrawList::AddText(ImFont const*, float, ImVec2 const&, unsigned int, char const*, char const*, float, ImVec4 const*) [264]
+                0.00    0.00     445/1538        ImGui::CalcTextSize(char const*, char const*, bool, float) [294]
+-----------------------------------------------
+                0.00    0.25     804/804         main [2]
+[10]    16.7    0.00    0.25     804         ImGui::Begin(char const*, bool*, int) [10]
+                0.00    0.25     804/1897        ImGui::Begin(char const*, bool*, ImVec2 const&, float, int) [3]
+-----------------------------------------------
+                0.00    0.04     289/1093        fs(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char const*) [5]
+                0.00    0.11     804/1093        main [2]
+[11]    10.2    0.00    0.15    1093         ImGui::Render() [11]
+                0.00    0.11     804/804         ImGui::EndFrame() [13]
+                0.05    0.00    1089/32771       measure(histogram&, int) [1]
+                0.00    0.00     804/804         ImGui_ImplGlfwGL3_RenderDrawLists(ImDrawData*) [299]
+-----------------------------------------------
+                0.00    0.11     804/804         main [2]
+[12]     7.2    0.00    0.11     804         ImGui::ButtonEx(char const*, ImVec2 const&, int) [12]
+                0.07    0.00    1608/32771       measure(histogram&, int) [1]
+                0.00    0.04     804/5961        ImGui::RenderTextClipped(ImVec2 const&, ImVec2 const&, char const*, char const*, ImVec2 const*, ImVec2 const&, ImRect const*) [9]
+                0.00    0.00     804/15936       ImHash(void const*, int, unsigned int) [256]
+                0.00    0.00     804/1093        ImGui::CalcItemSize(ImVec2, float, float) [298]
+                0.00    0.00     804/8008        ImGui::ItemSize(ImVec2 const&, float) [262]
+                0.00    0.00     804/8008        ImGui::ItemAdd(ImRect const&, unsigned int const*) [261]
+                0.00    0.00     804/6320        ImGui::ButtonBehavior(ImRect const&, unsigned int, bool*, bool*, int) [271]
+                0.00    0.00     804/1756        ImGui::RenderFrame(ImVec2, ImVec2, unsigned int, bool, float) [291]
+-----------------------------------------------
+                0.00    0.11     804/804         ImGui::Render() [11]
+[13]     7.0    0.00    0.11     804         ImGui::EndFrame() [13]
+                0.11    0.00    2343/32771       measure(histogram&, int) [1]
+                0.00    0.00     804/1897        ImGui::End() [289]
+                0.00    0.00       1/21          ImGui::FocusWindow(ImGuiWindow*) [320]
+-----------------------------------------------
+                0.00    0.10     445/445         main [2]
+[14]     6.6    0.00    0.10     445         ImGui::VSliderInt(char const*, ImVec2 const&, int*, int, int, char const*) [14]
+                0.00    0.10     445/445         ImGui::VSliderFloat(char const*, ImVec2 const&, float*, float, float, char const*, float) [15]
+-----------------------------------------------
+                0.00    0.10     445/445         ImGui::VSliderInt(char const*, ImVec2 const&, int*, int, int, char const*) [14]
+[15]     6.6    0.00    0.10     445         ImGui::VSliderFloat(char const*, ImVec2 const&, float*, float, float, char const*, float) [15]
+                0.04    0.00     890/32771       measure(histogram&, int) [1]
+                0.00    0.04     445/445         ImGui::SliderBehavior(ImRect const&, unsigned int, float*, float, float, float, int, int) [23]
+                0.00    0.02     445/5961        ImGui::RenderTextClipped(ImVec2 const&, ImVec2 const&, char const*, char const*, ImVec2 const*, ImVec2 const&, ImRect const*) [9]
+                0.00    0.00     445/15936       ImHash(void const*, int, unsigned int) [256]
+                0.00    0.00     445/8008        ImGui::ItemSize(ImVec2 const&, float) [262]
+                0.00    0.00     445/8008        ImGui::ItemAdd(ImRect const&, unsigned int const*) [261]
+                0.00    0.00     445/7054        ImGui::IsHovered(ImRect const&, unsigned int, bool) [268]
+                0.00    0.00     445/445         ImGui::ParseFormatPrecision(char const*, int) [308]
+                0.00    0.00       1/21          ImGui::FocusWindow(ImGuiWindow*) [320]
+-----------------------------------------------
+                                                 <spontaneous>
+[16]     6.0    0.00    0.09                 BeginPopupEx(char const*, int) [16]
+                0.00    0.09     289/1897        ImGui::Begin(char const*, bool*, ImVec2 const&, float, int) [3]
+                0.00    0.00     289/15936       ImHash(void const*, int, unsigned int) [256]
+                0.00    0.00     289/289         ImGui::PushStyleVar(int, float) [314]
+                0.00    0.00     289/289         ImFormatString(char*, int, char const*, ...) [311]
+-----------------------------------------------
+                0.00    0.09    1897/1897        ImGui::Begin(char const*, bool*, ImVec2 const&, float, int) [3]
+[17]     5.6    0.00    0.09    1897         ImGui::FindWindowByName(char const*) [17]
+                0.09    0.00    1897/32771       measure(histogram&, int) [1]
+-----------------------------------------------
+                0.00    0.07    1608/1608        ImGui::Begin(char const*, bool*, ImVec2 const&, float, int) [3]
+[18]     4.8    0.00    0.07    1608         ImGui::RenderCollapseTriangle(ImVec2, bool, float) [18]
+                0.07    0.00    1608/32771       measure(histogram&, int) [1]
+                0.00    0.00    1608/1608        ImDrawList::AddTriangleFilled(ImVec2 const&, ImVec2 const&, ImVec2 const&, unsigned int) [293]
+-----------------------------------------------
+                0.00    0.05    1093/1093        ImGui::Text(char const*, ...) [21]
+[19]     3.2    0.00    0.05    1093         ImGui::TextUnformatted(char const*, char const*) [19]
+                0.00    0.05    1093/1093        ImGui::RenderTextWrapped(ImVec2, char const*, char const*, float) [20]
+                0.00    0.00    1093/1538        ImGui::CalcTextSize(char const*, char const*, bool, float) [294]
+                0.00    0.00    1093/8008        ImGui::ItemSize(ImVec2 const&, float) [262]
+                0.00    0.00    1093/8008        ImGui::ItemAdd(ImRect const&, unsigned int const*) [261]
+-----------------------------------------------
+                0.00    0.05    1093/1093        ImGui::TextUnformatted(char const*, char const*) [19]
+[20]     3.2    0.00    0.05    1093         ImGui::RenderTextWrapped(ImVec2, char const*, char const*, float) [20]
+                0.05    0.00    1093/32771       measure(histogram&, int) [1]
+                0.00    0.00    1093/7343        ImDrawList::AddText(ImFont const*, float, ImVec2 const&, unsigned int, char const*, char const*, float, ImVec4 const*) [264]
+-----------------------------------------------
+                0.00    0.01     289/1093        fs(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char const*) [5]
+                0.00    0.04     804/1093        image_select[abi:cxx11](int) [4]
+[21]     3.2    0.00    0.05    1093         ImGui::Text(char const*, ...) [21]
+                0.00    0.05    1093/1093        ImGui::TextUnformatted(char const*, char const*) [19]
+-----------------------------------------------
+                                                 <spontaneous>
+[22]     3.2    0.00    0.05                 AddWindowToRenderList(ImVector<ImDrawList*>&, ImGuiWindow*) [22]
+                0.05    0.00    1089/32771       measure(histogram&, int) [1]
+-----------------------------------------------
+                0.00    0.04     445/445         ImGui::VSliderFloat(char const*, ImVec2 const&, float*, float, float, char const*, float) [15]
+[23]     2.6    0.00    0.04     445         ImGui::SliderBehavior(ImRect const&, unsigned int, float*, float, float, float, int, int) [23]
+                0.04    0.00     890/32771       measure(histogram&, int) [1]
+                0.00    0.00     445/1756        ImGui::RenderFrame(ImVec2, ImVec2, unsigned int, bool, float) [291]
+                0.00    0.00     445/5706        ImDrawList::AddRectFilled(ImVec2 const&, ImVec2 const&, unsigned int, float, int) [272]
+                0.00    0.00     335/335         ImGui::RoundScalar(float, int) [310]
+-----------------------------------------------
+                0.00    0.04     289/289         fs(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char const*) [5]
+[24]     2.6    0.00    0.04     289         ImGuiTextFilter::Draw(char const*, float) [24]
+                0.00    0.04     289/289         ImGui::InputTextEx(char const*, char*, int, ImVec2 const&, int, int (*)(ImGuiTextEditCallbackData*), void*) [25]
+-----------------------------------------------
+                0.00    0.04     289/289         ImGuiTextFilter::Draw(char const*, float) [24]
+[25]     2.6    0.00    0.04     289         ImGui::InputTextEx(char const*, char*, int, ImVec2 const&, int, int (*)(ImGuiTextEditCallbackData*), void*) [25]
+                0.04    0.00     867/32771       measure(histogram&, int) [1]
+                0.00    0.00     289/15936       ImHash(void const*, int, unsigned int) [256]
+                0.00    0.00     289/289         ImGui::CalcItemWidth() [315]
+                0.00    0.00     289/1093        ImGui::CalcItemSize(ImVec2, float, float) [298]
+                0.00    0.00     289/289         ImGui::FocusableItemRegister(ImGuiWindow*, bool, bool) [316]
+                0.00    0.00     289/7054        ImGui::IsHovered(ImRect const&, unsigned int, bool) [268]
+                0.00    0.00     289/8008        ImGui::ItemSize(ImVec2 const&, float) [262]
+                0.00    0.00     289/8008        ImGui::ItemAdd(ImRect const&, unsigned int const*) [261]
+                0.00    0.00     289/1756        ImGui::RenderFrame(ImVec2, ImVec2, unsigned int, bool, float) [291]
+                0.00    0.00     289/7343        ImDrawList::AddText(ImFont const*, float, ImVec2 const&, unsigned int, char const*, char const*, float, ImVec4 const*) [264]
+-----------------------------------------------
+                0.00    0.04     804/804         ImGui::Begin(char const*, bool*, ImVec2 const&, float, int) [3]
+[26]     2.4    0.00    0.04     804         ImGui::CloseButton(unsigned int, ImVec2 const&, float) [26]
+                0.04    0.00     804/32771       measure(histogram&, int) [1]
+                0.00    0.00     804/6320        ImGui::ButtonBehavior(ImRect const&, unsigned int, bool*, bool*, int) [271]
+                0.00    0.00     804/804         ImDrawList::AddCircleFilled(ImVec2 const&, float, unsigned int, int) [301]
+-----------------------------------------------
+                                                 <spontaneous>
+[27]     0.7    0.01    0.00                 stbi__idct_simd(unsigned char*, int, short*) [27]
+-----------------------------------------------
+                                                 <spontaneous>
+[28]     0.7    0.01    0.00                 stbi__YCbCr_to_RGB_simd(unsigned char*, unsigned char const*, unsigned char const*, unsigned char const*, int, int) [28]
+-----------------------------------------------
+                                                 <spontaneous>
+[29]     0.7    0.01    0.00                 stbi__jpeg_decode_block(stbi__jpeg*, short*, stbi__huffman*, stbi__huffman*, short*, int, unsigned short*) [29]
+                0.00    0.00  636081/766084      ImGui_ImplGlfwGL3_CharCallback(GLFWwindow*, unsigned int) [252]
+-----------------------------------------------
+                                                 <spontaneous>
+[30]     0.7    0.01    0.00                 stbi__grow_buffer_unsafe(stbi__jpeg*) [30]
+                0.00    0.00   10736/146252      ImGui_ImplGlfwGL3_ScrollCallback(GLFWwindow*, double, double) [253]
+-----------------------------------------------
+                                                 <spontaneous>
+[31]     0.0    0.00    0.00                 FindWindowSettings(char const*) [31]
+                0.00    0.00       4/32771       measure(histogram&, int) [1]
+-----------------------------------------------
+                0.00    0.00       3/3           ImGui::Begin(char const*, bool*, ImVec2 const&, float, int) [3]
+[32]     0.0    0.00    0.00       3         ImGuiWindow::ImGuiWindow(char const*) [32]
+                0.00    0.00       3/32771       measure(histogram&, int) [1]
+                0.00    0.00       3/15936       ImHash(void const*, int, unsigned int) [256]
+                0.00    0.00       3/3           ImDrawList::ImDrawList() [326]
+-----------------------------------------------
+                                                 <spontaneous>
+[33]     0.0    0.00    0.00                 AddWindowSettings(char const*) [33]
+                0.00    0.00       2/32771       measure(histogram&, int) [1]
+-----------------------------------------------
+                0.00    0.00       1/22          main [2]
+                0.00    0.00      10/22          measure(histogram&, int) [1]
+                0.00    0.00      11/22          stbi__load_and_postprocess_8bit(stbi__context*, int*, int*, int*, int) [494]
+[34]     0.0    0.00    0.00      22         stbi_zlib_decode_malloc_guesssize_headerflag [34]
+-----------------------------------------------
+                0.00    0.00      11/766084      stbi__load_main(stbi__context*, int*, int*, int*, int, stbi__result_info*, int) [419]
+                0.00    0.00      98/766084      measure(histogram&, int) [1]
+                0.00    0.00     436/766084      stbi__process_marker(stbi__jpeg*, int) [456]
+                0.00    0.00  129458/766084      load_jpeg_image(stbi__jpeg*, int*, int*, int*, int) [clone .constprop.178] [416]
+                0.00    0.00  636081/766084      stbi__jpeg_decode_block(stbi__jpeg*, short*, stbi__huffman*, stbi__huffman*, short*, int, unsigned short*) [29]
+[252]    0.0    0.00    0.00  766084         ImGui_ImplGlfwGL3_CharCallback(GLFWwindow*, unsigned int) [252]
+-----------------------------------------------
+                0.00    0.00       1/146252      main [2]
+                0.00    0.00      10/146252      measure(histogram&, int) [1]
+                0.00    0.00      16/146252      stbi__readval(stbi__context*, int, unsigned char*) [403]
+                0.00    0.00     127/146252      stbi__process_marker(stbi__jpeg*, int) [456]
+                0.00    0.00   10736/146252      stbi__grow_buffer_unsafe(stbi__jpeg*) [30]
+                0.00    0.00  135362/146252      load_jpeg_image(stbi__jpeg*, int*, int*, int*, int) [clone .constprop.178] [416]
+[253]    0.0    0.00    0.00  146252         ImGui_ImplGlfwGL3_ScrollCallback(GLFWwindow*, double, double) [253]
+-----------------------------------------------
+                0.00    0.00     664/39004       stbtt__sort_edges_quicksort(stbtt__edge*, int) [490]
+                0.00    0.00     896/39004       stbtt__GetGlyphShapeTT(stbtt_fontinfo const*, int, stbtt_vertex**) [474]
+                0.00    0.00    2321/39004       ImFontAtlas::AddFontFromMemoryCompressedTTF(void const*, int, float, ImFontConfig const*, unsigned short const*) [341]
+                0.00    0.00   12699/39004       stbrp_pack_rects [238]
+                0.00    0.00   22424/39004       ImFontAtlas::Build() [343]
+[254]    0.0    0.00    0.00   39004         ImGui::Columns(int, char const*, bool) [254]
+-----------------------------------------------
+                0.00    0.00     289/19298       ImDrawList::AddPolyline(ImVec2 const*, int, unsigned int, bool, float, bool) [312]
+                0.00    0.00    2229/19298       ImDrawList::AddImage(void*, ImVec2 const&, ImVec2 const&, ImVec2 const&, ImVec2 const&, unsigned int) [282]
+                0.00    0.00    2490/19298       ImDrawList::AddRectFilled(ImVec2 const&, ImVec2 const&, unsigned int, float, int) [272]
+                0.00    0.00    7054/19298       ImFont::RenderText(ImDrawList*, float, ImVec2, unsigned int, ImVec4 const&, char const*, char const*, float, bool) const [269]
+                0.00    0.00    7236/19298       ImDrawList::AddConvexPolyFilled(ImVec2 const*, int, unsigned int, bool) [265]
+[255]    0.0    0.00    0.00   19298         ImDrawList::PrimReserve(int, int) [255]
+                0.00    0.00      38/1154        ImGui::MemAlloc(unsigned long long) [297]
+                0.00    0.00      38/1190        ImGui::MemFree(void*) [296]
+-----------------------------------------------
+                0.00    0.00       3/15936       ImGuiWindow::ImGuiWindow(char const*) [32]
+                0.00    0.00     289/15936       BeginPopupEx(char const*, int) [16]
+                0.00    0.00     289/15936       ImGui::InputTextEx(char const*, char*, int, ImVec2 const&, int, int (*)(ImGuiTextEditCallbackData*), void*) [25]
+                0.00    0.00     445/15936       ImGui::VSliderFloat(char const*, ImVec2 const&, float*, float, float, char const*, float) [15]
+                0.00    0.00     578/15936       ImGui::OpenPopupEx(char const*, bool) [313]
+                0.00    0.00     804/15936       ImGui::ButtonEx(char const*, ImVec2 const&, int) [12]
+                0.00    0.00    2412/15936       ImGui::Begin(char const*, bool*, ImVec2 const&, float, int) [3]
+                0.00    0.00    3148/15936       ImGui::Selectable(char const*, bool, int, ImVec2 const&) [8]
+                0.00    0.00    7968/15936       ImGuiWindow::GetID(char const*, char const*) [clone .constprop.157] [534]
+[256]    0.0    0.00    0.00   15936         ImHash(void const*, int, unsigned int) [256]
+-----------------------------------------------
+                0.00    0.00    1608/14472       ImGui::Begin(char const*, bool*, ImVec2 const&, float, int) [3]
+                0.00    0.00   12864/14472       ImDrawList::PathRect(ImVec2 const&, ImVec2 const&, float, int) [275]
+[257]    0.0    0.00    0.00   14472         ImDrawList::PathArcToFast(ImVec2 const&, float, int, int) [257]
+                0.00    0.00       2/1154        ImGui::MemAlloc(unsigned long long) [297]
+                0.00    0.00       2/1190        ImGui::MemFree(void*) [296]
+-----------------------------------------------
+                0.00    0.00    3216/14020       ImGui::Begin(char const*, bool*, ImVec2 const&, float, int) [3]
+                0.00    0.00    3216/14020       ImDrawList::AddTriangleFilled(ImVec2 const&, ImVec2 const&, ImVec2 const&, unsigned int) [293]
+                0.00    0.00    7588/14020       ImDrawList::PathRect(ImVec2 const&, ImVec2 const&, float, int) [275]
+[258]    0.0    0.00    0.00   14020         ImVector<ImVec2>::push_back(ImVec2 const&) [258]
+-----------------------------------------------
+                0.00    0.00      43/11083       stbi__process_marker(stbi__jpeg*, int) [456]
+                0.00    0.00   11040/11083       load_jpeg_image(stbi__jpeg*, int*, int*, int*, int) [clone .constprop.178] [416]
+[259]    0.0    0.00    0.00   11083         __gcc_deregister_frame [259]
+-----------------------------------------------
+                0.00    0.00     481/10403       ImGui::Begin(char const*, bool*, ImVec2 const&, float, int) [3]
+                0.00    0.00    1958/10403       ImGui::IsHovered(ImRect const&, unsigned int, bool) [268]
+                0.00    0.00    7964/10403       ImGui::ItemAdd(ImRect const&, unsigned int const*) [261]
+[260]    0.0    0.00    0.00   10403         ImGui::IsMouseHoveringRect(ImVec2 const&, ImVec2 const&, bool) [260]
+-----------------------------------------------
+                0.00    0.00     289/8008        ImGui::InputTextEx(char const*, char*, int, ImVec2 const&, int, int (*)(ImGuiTextEditCallbackData*), void*) [25]
+                0.00    0.00     445/8008        ImGui::VSliderFloat(char const*, ImVec2 const&, float*, float, float, char const*, float) [15]
+                0.00    0.00     804/8008        ImGui::ButtonEx(char const*, ImVec2 const&, int) [12]
+                0.00    0.00    1093/8008        ImGui::TextUnformatted(char const*, char const*) [19]
+                0.00    0.00    2229/8008        ImGui::Image(void*, ImVec2 const&, ImVec2 const&, ImVec2 const&, ImVec4 const&, ImVec4 const&) [284]
+                0.00    0.00    3148/8008        ImGui::Selectable(char const*, bool, int, ImVec2 const&) [8]
+[261]    0.0    0.00    0.00    8008         ImGui::ItemAdd(ImRect const&, unsigned int const*) [261]
+                0.00    0.00    7964/10403       ImGui::IsMouseHoveringRect(ImVec2 const&, ImVec2 const&, bool) [260]
+-----------------------------------------------
+                0.00    0.00     289/8008        ImGui::InputTextEx(char const*, char*, int, ImVec2 const&, int, int (*)(ImGuiTextEditCallbackData*), void*) [25]
+                0.00    0.00     445/8008        ImGui::VSliderFloat(char const*, ImVec2 const&, float*, float, float, char const*, float) [15]
+                0.00    0.00     804/8008        ImGui::ButtonEx(char const*, ImVec2 const&, int) [12]
+                0.00    0.00    1093/8008        ImGui::TextUnformatted(char const*, char const*) [19]
+                0.00    0.00    2229/8008        ImGui::Image(void*, ImVec2 const&, ImVec2 const&, ImVec2 const&, ImVec4 const&, ImVec4 const&) [284]
+                0.00    0.00    3148/8008        ImGui::Selectable(char const*, bool, int, ImVec2 const&) [8]
+[262]    0.0    0.00    0.00    8008         ImGui::ItemSize(ImVec2 const&, float) [262]
+-----------------------------------------------
+                0.00    0.00     446/7920        ImDrawList::AddImage(void*, ImVec2 const&, ImVec2 const&, ImVec2 const&, ImVec2 const&, unsigned int) [282]
+                0.00    0.00     647/7920        ImGui::PopClipRect() [287]
+                0.00    0.00     804/7920        ImGui::NewFrame() [7]
+                0.00    0.00    1897/7920        ImGui::PushClipRect(ImVec2 const&, ImVec2 const&, bool) [274]
+                0.00    0.00    1897/7920        ImGui::Begin(char const*, bool*, ImVec2 const&, float, int) [3]
+                0.00    0.00    2229/7920        ImGui::Image(void*, ImVec2 const&, ImVec2 const&, ImVec2 const&, ImVec4 const&, ImVec4 const&) [284]
+[263]    0.0    0.00    0.00    7920         ImDrawList::AddDrawCmd() [263]
+                0.00    0.00       4/1154        ImGui::MemAlloc(unsigned long long) [297]
+                0.00    0.00       4/1190        ImGui::MemFree(void*) [296]
+-----------------------------------------------
+                0.00    0.00     289/7343        ImGui::InputTextEx(char const*, char*, int, ImVec2 const&, int, int (*)(ImGuiTextEditCallbackData*), void*) [25]
+                0.00    0.00    1093/7343        ImGui::RenderTextWrapped(ImVec2, char const*, char const*, float) [20]
+                0.00    0.00    5961/7343        ImGui::RenderTextClipped(ImVec2 const&, ImVec2 const&, char const*, char const*, ImVec2 const*, ImVec2 const&, ImRect const*) [9]
+[264]    0.0    0.00    0.00    7343         ImDrawList::AddText(ImFont const*, float, ImVec2 const&, unsigned int, char const*, char const*, float, ImVec4 const*) [264]
+                0.00    0.00    7054/7054        ImFont::RenderText(ImDrawList*, float, ImVec2, unsigned int, ImVec4 const&, char const*, char const*, float, bool) const [269]
+-----------------------------------------------
+                0.00    0.00     804/7236        ImDrawList::AddCircleFilled(ImVec2 const&, float, unsigned int, int) [301]
+                0.00    0.00    1608/7236        ImGui::Begin(char const*, bool*, ImVec2 const&, float, int) [3]
+                0.00    0.00    1608/7236        ImDrawList::AddTriangleFilled(ImVec2 const&, ImVec2 const&, ImVec2 const&, unsigned int) [293]
+                0.00    0.00    3216/7236        ImDrawList::AddRectFilled(ImVec2 const&, ImVec2 const&, unsigned int, float, int) [272]
+[265]    0.0    0.00    0.00    7236         ImDrawList::AddConvexPolyFilled(ImVec2 const*, int, unsigned int, bool) [265]
+                0.00    0.00    7236/19298       ImDrawList::PrimReserve(int, int) [255]
+-----------------------------------------------
+                0.00    0.00     804/7159        ImGui::NewFrame() [7]
+                0.00    0.00    1897/7159        ImGui::Begin(char const*, bool*, ImVec2 const&, float, int) [3]
+                0.00    0.00    2229/7159        ImGui::Image(void*, ImVec2 const&, ImVec2 const&, ImVec2 const&, ImVec4 const&, ImVec4 const&) [284]
+                0.00    0.00    2229/7159        ImDrawList::AddImage(void*, ImVec2 const&, ImVec2 const&, ImVec2 const&, ImVec2 const&, unsigned int) [282]
+[266]    0.0    0.00    0.00    7159         ImDrawList::UpdateTextureID() [266]
+-----------------------------------------------
+                0.00    0.00    1538/7098        ImGui::CalcTextSize(char const*, char const*, bool, float) [294]
+                0.00    0.00    5560/7098        ImGui::CalcTextSize(char const*, char const*, bool, float) [clone .constprop.152] [629]
+[267]    0.0    0.00    0.00    7098         ImFont::CalcTextSizeA(float, float, float, char const*, char const*, char const**) const [267]
+-----------------------------------------------
+                0.00    0.00     289/7054        ImGui::InputTextEx(char const*, char*, int, ImVec2 const&, int, int (*)(ImGuiTextEditCallbackData*), void*) [25]
+                0.00    0.00     445/7054        ImGui::VSliderFloat(char const*, ImVec2 const&, float*, float, float, char const*, float) [15]
+                0.00    0.00    6320/7054        ImGui::ButtonBehavior(ImRect const&, unsigned int, bool*, bool*, int) [271]
+[268]    0.0    0.00    0.00    7054         ImGui::IsHovered(ImRect const&, unsigned int, bool) [268]
+                0.00    0.00    1958/10403       ImGui::IsMouseHoveringRect(ImVec2 const&, ImVec2 const&, bool) [260]
+-----------------------------------------------
+                0.00    0.00    7054/7054        ImDrawList::AddText(ImFont const*, float, ImVec2 const&, unsigned int, char const*, char const*, float, ImVec4 const*) [264]
+[269]    0.0    0.00    0.00    7054         ImFont::RenderText(ImDrawList*, float, ImVec2, unsigned int, ImVec4 const&, char const*, char const*, float, bool) const [269]
+                0.00    0.00    7054/19298       ImDrawList::PrimReserve(int, int) [255]
+-----------------------------------------------
+                0.00    0.00     804/6495        ImGui::NewFrame() [7]
+                0.00    0.00    1897/6495        ImGui::PopClipRect() [287]
+                0.00    0.00    3794/6495        ImGui::PushClipRect(ImVec2 const&, ImVec2 const&, bool) [274]
+[270]    0.0    0.00    0.00    6495         ImDrawList::UpdateClipRect() [270]
+-----------------------------------------------
+                0.00    0.00     804/6320        ImGui::CloseButton(unsigned int, ImVec2 const&, float) [26]
+                0.00    0.00     804/6320        ImGui::ButtonEx(char const*, ImVec2 const&, int) [12]
+                0.00    0.00    1608/6320        ImGui::Begin(char const*, bool*, ImVec2 const&, float, int) [3]
+                0.00    0.00    3104/6320        ImGui::Selectable(char const*, bool, int, ImVec2 const&) [8]
+[271]    0.0    0.00    0.00    6320         ImGui::ButtonBehavior(ImRect const&, unsigned int, bool*, bool*, int) [271]
+                0.00    0.00    6320/7054        ImGui::IsHovered(ImRect const&, unsigned int, bool) [268]
+                0.00    0.00       5/21          ImGui::FocusWindow(ImGuiWindow*) [320]
+-----------------------------------------------
+                0.00    0.00     445/5706        ImGui::SliderBehavior(ImRect const&, unsigned int, float*, float, float, float, int, int) [23]
+                0.00    0.00    1756/5706        ImGui::RenderFrame(ImVec2, ImVec2, unsigned int, bool, float) [291]
+                0.00    0.00    3505/5706        ImGui::Begin(char const*, bool*, ImVec2 const&, float, int) [3]
+[272]    0.0    0.00    0.00    5706         ImDrawList::AddRectFilled(ImVec2 const&, ImVec2 const&, unsigned int, float, int) [272]
+                0.00    0.00    3216/3505        ImDrawList::PathRect(ImVec2 const&, ImVec2 const&, float, int) [275]
+                0.00    0.00    3216/7236        ImDrawList::AddConvexPolyFilled(ImVec2 const*, int, unsigned int, bool) [265]
+                0.00    0.00    2490/19298       ImDrawList::PrimReserve(int, int) [255]
+-----------------------------------------------
+                0.00    0.00    3794/3794        ImGui::PushClipRect(ImVec2 const&, ImVec2 const&, bool) [274]
+[273]    0.0    0.00    0.00    3794         ImDrawList::PushClipRect(ImVec2, ImVec2, bool) [273]
+                0.00    0.00       3/1154        ImGui::MemAlloc(unsigned long long) [297]
+                0.00    0.00       3/1190        ImGui::MemFree(void*) [296]
+-----------------------------------------------
+                0.00    0.00    3794/3794        ImGui::Begin(char const*, bool*, ImVec2 const&, float, int) [3]
+[274]    0.0    0.00    0.00    3794         ImGui::PushClipRect(ImVec2 const&, ImVec2 const&, bool) [274]
+                0.00    0.00    3794/6495        ImDrawList::UpdateClipRect() [270]
+                0.00    0.00    3794/3794        ImDrawList::PushClipRect(ImVec2, ImVec2, bool) [273]
+                0.00    0.00    1897/7920        ImDrawList::AddDrawCmd() [263]
+-----------------------------------------------
+                0.00    0.00     289/3505        ImDrawList::AddRect(ImVec2 const&, ImVec2 const&, unsigned int, float, int, float) [307]
+                0.00    0.00    3216/3505        ImDrawList::AddRectFilled(ImVec2 const&, ImVec2 const&, unsigned int, float, int) [272]
+[275]    0.0    0.00    0.00    3505         ImDrawList::PathRect(ImVec2 const&, ImVec2 const&, float, int) [275]
+                0.00    0.00   12864/14472       ImDrawList::PathArcToFast(ImVec2 const&, float, int, int) [257]
+                0.00    0.00    7588/14020       ImVector<ImVec2>::push_back(ImVec2 const&) [258]
+-----------------------------------------------
+                0.00    0.00    3179/3179        fs(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char const*) [5]
+[276]    0.0    0.00    0.00    3179         void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::emplace_back<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&) [276]
+-----------------------------------------------
+                0.00    0.00    3148/3148        ImGui::Selectable(char const*, bool, int, ImVec2 const&) [8]
+[277]    0.0    0.00    0.00    3148         ImGui::GetContentRegionMax() [277]
+-----------------------------------------------
+                0.00    0.00    3148/3148        fs(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char const*) [5]
+[278]    0.0    0.00    0.00    3148         ImGuiTextFilter::PassFilter(char const*, char const*) const [278]
+-----------------------------------------------
+                0.00    0.00     804/3033        image_select[abi:cxx11](int) [4]
+                0.00    0.00    2229/3033        main [2]
+[279]    0.0    0.00    0.00    3033         ImGui::SameLine(float, float) [279]
+-----------------------------------------------
+                0.00    0.00       3/2704        ImDrawList::ImDrawList() [326]
+                0.00    0.00     804/2704        ImGui::NewFrame() [7]
+                0.00    0.00    1897/2704        ImGui::Begin(char const*, bool*, ImVec2 const&, float, int) [3]
+[280]    0.0    0.00    0.00    2704         ImDrawList::Clear() [280]
+-----------------------------------------------
+                0.00    0.00     804/2701        ImGui::NewFrame() [7]
+                0.00    0.00    1897/2701        ImGui::Begin(char const*, bool*, ImVec2 const&, float, int) [3]
+[281]    0.0    0.00    0.00    2701         ImDrawList::PushTextureID(void* const&) [281]
+                0.00    0.00       4/1154        ImGui::MemAlloc(unsigned long long) [297]
+                0.00    0.00       4/1190        ImGui::MemFree(void*) [296]
+-----------------------------------------------
+                0.00    0.00    2229/2229        ImGui::Image(void*, ImVec2 const&, ImVec2 const&, ImVec2 const&, ImVec4 const&, ImVec4 const&) [284]
+[282]    0.0    0.00    0.00    2229         ImDrawList::AddImage(void*, ImVec2 const&, ImVec2 const&, ImVec2 const&, ImVec2 const&, unsigned int) [282]
+                0.00    0.00    2229/7159        ImDrawList::UpdateTextureID() [266]
+                0.00    0.00    2229/19298       ImDrawList::PrimReserve(int, int) [255]
+                0.00    0.00     446/7920        ImDrawList::AddDrawCmd() [263]
+-----------------------------------------------
+                0.00    0.00    2229/2229        ImGui::Image(void*, ImVec2 const&, ImVec2 const&, ImVec2 const&, ImVec4 const&, ImVec4 const&) [284]
+[283]    0.0    0.00    0.00    2229         ImGui::GetColorU32(ImVec4 const&) [283]
+-----------------------------------------------
+                0.00    0.00    2229/2229        main [2]
+[284]    0.0    0.00    0.00    2229         ImGui::Image(void*, ImVec2 const&, ImVec2 const&, ImVec2 const&, ImVec4 const&, ImVec4 const&) [284]
+                0.00    0.00    2229/8008        ImGui::ItemSize(ImVec2 const&, float) [262]
+                0.00    0.00    2229/8008        ImGui::ItemAdd(ImRect const&, unsigned int const*) [261]
+                0.00    0.00    2229/2229        ImGui::GetColorU32(ImVec4 const&) [283]
+                0.00    0.00    2229/7920        ImDrawList::AddDrawCmd() [263]
+                0.00    0.00    2229/7159        ImDrawList::UpdateTextureID() [266]
+                0.00    0.00    2229/2229        ImDrawList::AddImage(void*, ImVec2 const&, ImVec2 const&, ImVec2 const&, ImVec2 const&, unsigned int) [282]
+-----------------------------------------------
+                0.00    0.00    1900/1900        ImGui::Begin(char const*, bool*, ImVec2 const&, float, int) [3]
+[285]    0.0    0.00    0.00    1900         ImVector<ImGuiWindow*>::push_back(ImGuiWindow* const&) [285]
+-----------------------------------------------
+                0.00    0.00    1897/1897        ImGui::PopClipRect() [287]
+[286]    0.0    0.00    0.00    1897         ImDrawList::PopClipRect() [286]
+-----------------------------------------------
+                0.00    0.00    1897/1897        ImGui::End() [289]
+[287]    0.0    0.00    0.00    1897         ImGui::PopClipRect() [287]
+                0.00    0.00    1897/6495        ImDrawList::UpdateClipRect() [270]
+                0.00    0.00    1897/1897        ImDrawList::PopClipRect() [286]
+                0.00    0.00     647/7920        ImDrawList::AddDrawCmd() [263]
+-----------------------------------------------
+                0.00    0.00    1897/1897        ImGui::Begin(char const*, bool*, ImVec2 const&, float, int) [3]
+[288]    0.0    0.00    0.00    1897         ImGui::ColorConvertFloat4ToU32(ImVec4 const&) [288]
+-----------------------------------------------
+                0.00    0.00     289/1897        ImGui::EndPopup() [317]
+                0.00    0.00     804/1897        ImGui::EndFrame() [13]
+                0.00    0.00     804/1897        main [2]
+[289]    0.0    0.00    0.00    1897         ImGui::End() [289]
+                0.00    0.00    1897/1897        ImGui::PopClipRect() [287]
+                0.00    0.00    1897/1897        ImGui::LogFinish() [290]
+-----------------------------------------------
+                0.00    0.00    1897/1897        ImGui::End() [289]
+[290]    0.0    0.00    0.00    1897         ImGui::LogFinish() [290]
+-----------------------------------------------
+                0.00    0.00     218/1756        ImGui::Selectable(char const*, bool, int, ImVec2 const&) [8]
+                0.00    0.00     289/1756        ImGui::InputTextEx(char const*, char*, int, ImVec2 const&, int, int (*)(ImGuiTextEditCallbackData*), void*) [25]
+                0.00    0.00     445/1756        ImGui::SliderBehavior(ImRect const&, unsigned int, float*, float, float, float, int, int) [23]
+                0.00    0.00     804/1756        ImGui::ButtonEx(char const*, ImVec2 const&, int) [12]
+[291]    0.0    0.00    0.00    1756         ImGui::RenderFrame(ImVec2, ImVec2, unsigned int, bool, float) [291]
+                0.00    0.00    1756/5706        ImDrawList::AddRectFilled(ImVec2 const&, ImVec2 const&, unsigned int, float, int) [272]
+-----------------------------------------------
+                0.00    0.00       1/1611        ImGui_ImplGlfwGL3_CreateFontsTexture() [332]
+                0.00    0.00       1/1611        ImGui_ImplGlfwGL3_InvalidateDeviceObjects() [334]
+                0.00    0.00       1/1611        ImGui_ImplGlfwGL3_Init(GLFWwindow*, bool) [331]
+                0.00    0.00     804/1611        ImGui_ImplGlfwGL3_RenderDrawLists(ImDrawData*) [299]
+                0.00    0.00     804/1611        ImGui_ImplGlfwGL3_NewFrame() [6]
+[292]    0.0    0.00    0.00    1611         ImGui::GetIO() [292]
+-----------------------------------------------
+                0.00    0.00    1608/1608        ImGui::RenderCollapseTriangle(ImVec2, bool, float) [18]
+[293]    0.0    0.00    0.00    1608         ImDrawList::AddTriangleFilled(ImVec2 const&, ImVec2 const&, ImVec2 const&, unsigned int) [293]
+                0.00    0.00    3216/14020       ImVector<ImVec2>::push_back(ImVec2 const&) [258]
+                0.00    0.00    1608/7236        ImDrawList::AddConvexPolyFilled(ImVec2 const*, int, unsigned int, bool) [265]
+-----------------------------------------------
+                0.00    0.00     445/1538        ImGui::RenderTextClipped(ImVec2 const&, ImVec2 const&, char const*, char const*, ImVec2 const*, ImVec2 const&, ImRect const*) [9]
+                0.00    0.00    1093/1538        ImGui::TextUnformatted(char const*, char const*) [19]
+[294]    0.0    0.00    0.00    1538         ImGui::CalcTextSize(char const*, char const*, bool, float) [294]
+                0.00    0.00    1538/7098        ImFont::CalcTextSizeA(float, float, float, char const*, char const*, char const**) const [267]
+-----------------------------------------------
+                0.00    0.00       5/1450        dirlist[abi:cxx11](char const*, int) [335]
+                0.00    0.00    1445/1450        fs(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char const*) [5]
+[295]    0.0    0.00    0.00    1450         void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_emplace_back_aux<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&) [295]
+-----------------------------------------------
+                0.00    0.00       1/1190        ImFontAtlas::RenderCustomTexData(int, void*) [clone .constprop.66] [523]
+                0.00    0.00       1/1190        ImDrawList::PushClipRectFullScreen() [302]
+                0.00    0.00       1/1190        ImFontAtlas::AddFontFromMemoryCompressedBase85TTF(char const*, float, ImFontConfig const*, unsigned short const*) [342]
+                0.00    0.00       1/1190        ImDrawList::PathArcTo(ImVec2 const&, float, float, float, int) [303]
+                0.00    0.00       2/1190        ImFontAtlas::ClearInputData() [338]
+                0.00    0.00       2/1190        ImFontAtlas::Clear() [344]
+                0.00    0.00       2/1190        ImFontAtlas::AddFont(ImFontConfig const*) [345]
+                0.00    0.00       2/1190        ImFont::GrowIndex(int) [349]
+                0.00    0.00       2/1190        ImDrawList::PathArcToFast(ImVec2 const&, float, int, int) [257]
+                0.00    0.00       3/1190        ImDrawList::PushClipRect(ImVec2, ImVec2, bool) [273]
+                0.00    0.00       4/1190        ImDrawList::AddDrawCmd() [263]
+                0.00    0.00       4/1190        ImDrawList::PushTextureID(void* const&) [281]
+                0.00    0.00       5/1190        ImFontAtlas::ClearFonts() [336]
+                0.00    0.00      21/1190        ImDrawList::ClearFreeMemory() [323]
+                0.00    0.00      38/1190        ImDrawList::PrimReserve(int, int) [255]
+                0.00    0.00    1101/1190        ImFontAtlas::Build() [343]
+[296]    0.0    0.00    0.00    1190         ImGui::MemFree(void*) [296]
+-----------------------------------------------
+                0.00    0.00       1/1154        ImFontAtlas::RenderCustomTexData(int, void*) [clone .constprop.66] [523]
+                0.00    0.00       1/1154        ImDrawList::PushClipRectFullScreen() [302]
+                0.00    0.00       1/1154        ImFontAtlas::AddFontFromMemoryCompressedTTF(void const*, int, float, ImFontConfig const*, unsigned short const*) [341]
+                0.00    0.00       1/1154        ImFontAtlas::AddFontFromMemoryCompressedBase85TTF(char const*, float, ImFontConfig const*, unsigned short const*) [342]
+                0.00    0.00       1/1154        ImFontAtlas::GetTexDataAsRGBA32(unsigned char**, int*, int*, int*) [339]
+                0.00    0.00       1/1154        ImDrawList::PathArcTo(ImVec2 const&, float, float, float, int) [303]
+                0.00    0.00       2/1154        ImFont::GrowIndex(int) [349]
+                0.00    0.00       2/1154        ImDrawList::PathArcToFast(ImVec2 const&, float, int, int) [257]
+                0.00    0.00       3/1154        ImDrawList::PushClipRect(ImVec2, ImVec2, bool) [273]
+                0.00    0.00       3/1154        ImFontAtlas::AddFont(ImFontConfig const*) [345]
+                0.00    0.00       4/1154        ImDrawList::AddDrawCmd() [263]
+                0.00    0.00       4/1154        ImDrawList::PushTextureID(void* const&) [281]
+                0.00    0.00      38/1154        ImDrawList::PrimReserve(int, int) [255]
+                0.00    0.00     215/1154        stbtt__GetGlyphShapeTT(stbtt_fontinfo const*, int, stbtt_vertex**) [474]
+                0.00    0.00     877/1154        ImFontAtlas::Build() [343]
+[297]    0.0    0.00    0.00    1154         ImGui::MemAlloc(unsigned long long) [297]
+-----------------------------------------------
+                0.00    0.00     289/1093        ImGui::InputTextEx(char const*, char*, int, ImVec2 const&, int, int (*)(ImGuiTextEditCallbackData*), void*) [25]
+                0.00    0.00     804/1093        ImGui::ButtonEx(char const*, ImVec2 const&, int) [12]
+[298]    0.0    0.00    0.00    1093         ImGui::CalcItemSize(ImVec2, float, float) [298]
+-----------------------------------------------
+                0.00    0.00     804/804         ImGui::Render() [11]
+[299]    0.0    0.00    0.00     804         ImGui_ImplGlfwGL3_RenderDrawLists(ImDrawData*) [299]
+                0.00    0.00     804/1611        ImGui::GetIO() [292]
+                0.00    0.00     804/804         ImDrawData::ScaleClipRects(ImVec2 const&) [300]
+-----------------------------------------------
+                0.00    0.00     804/804         ImGui_ImplGlfwGL3_RenderDrawLists(ImDrawData*) [299]
+[300]    0.0    0.00    0.00     804         ImDrawData::ScaleClipRects(ImVec2 const&) [300]
+-----------------------------------------------
+                0.00    0.00     804/804         ImGui::CloseButton(unsigned int, ImVec2 const&, float) [26]
+[301]    0.0    0.00    0.00     804         ImDrawList::AddCircleFilled(ImVec2 const&, float, unsigned int, int) [301]
+                0.00    0.00     804/804         ImDrawList::PathArcTo(ImVec2 const&, float, float, float, int) [303]
+                0.00    0.00     804/7236        ImDrawList::AddConvexPolyFilled(ImVec2 const*, int, unsigned int, bool) [265]
+-----------------------------------------------
+                0.00    0.00     804/804         ImGui::NewFrame() [7]
+[302]    0.0    0.00    0.00     804         ImDrawList::PushClipRectFullScreen() [302]
+                0.00    0.00       1/1154        ImGui::MemAlloc(unsigned long long) [297]
+                0.00    0.00       1/1190        ImGui::MemFree(void*) [296]
+-----------------------------------------------
+                0.00    0.00     804/804         ImDrawList::AddCircleFilled(ImVec2 const&, float, unsigned int, int) [301]
+[303]    0.0    0.00    0.00     804         ImDrawList::PathArcTo(ImVec2 const&, float, float, float, int) [303]
+                0.00    0.00       1/1154        ImGui::MemAlloc(unsigned long long) [297]
+                0.00    0.00       1/1190        ImGui::MemFree(void*) [296]
+-----------------------------------------------
+                0.00    0.00     804/804         fs(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char const*) [5]
+[304]    0.0    0.00    0.00     804         ImGui::BeginPopup(char const*) [304]
+-----------------------------------------------
+                0.00    0.00     804/804         main [2]
+[305]    0.0    0.00    0.00     804         ImGui::SetNextWindowSize(ImVec2 const&, int) [305]
+-----------------------------------------------
+                0.00    0.00     804/804         main [2]
+[306]    0.0    0.00    0.00     804         ImGui::Button(char const*, ImVec2 const&) [306]
+-----------------------------------------------
+                0.00    0.00     578/578         ImGui::Begin(char const*, bool*, ImVec2 const&, float, int) [3]
+[307]    0.0    0.00    0.00     578         ImDrawList::AddRect(ImVec2 const&, ImVec2 const&, unsigned int, float, int, float) [307]
+                0.00    0.00     289/3505        ImDrawList::PathRect(ImVec2 const&, ImVec2 const&, float, int) [275]
+                0.00    0.00     289/289         ImDrawList::AddPolyline(ImVec2 const*, int, unsigned int, bool, float, bool) [312]
+-----------------------------------------------
+                0.00    0.00     445/445         ImGui::VSliderFloat(char const*, ImVec2 const&, float*, float, float, char const*, float) [15]
+[308]    0.0    0.00    0.00     445         ImGui::ParseFormatPrecision(char const*, int) [308]
+-----------------------------------------------
+                0.00    0.00     439/439         ImGui::NewFrame() [7]
+[309]    0.0    0.00    0.00     439         ImGui::IsKeyPressed(int, bool) [309]
+-----------------------------------------------
+                0.00    0.00     335/335         ImGui::SliderBehavior(ImRect const&, unsigned int, float*, float, float, float, int, int) [23]
+[310]    0.0    0.00    0.00     335         ImGui::RoundScalar(float, int) [310]
+-----------------------------------------------
+                0.00    0.00     289/289         BeginPopupEx(char const*, int) [16]
+[311]    0.0    0.00    0.00     289         ImFormatString(char*, int, char const*, ...) [311]
+-----------------------------------------------
+                0.00    0.00     289/289         ImDrawList::AddRect(ImVec2 const&, ImVec2 const&, unsigned int, float, int, float) [307]
+[312]    0.0    0.00    0.00     289         ImDrawList::AddPolyline(ImVec2 const*, int, unsigned int, bool, float, bool) [312]
+                0.00    0.00     289/19298       ImDrawList::PrimReserve(int, int) [255]
+-----------------------------------------------
+                0.00    0.00       1/289         main [2]
+                0.00    0.00     288/289         fs(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char const*) [5]
+[313]    0.0    0.00    0.00     289         ImGui::OpenPopupEx(char const*, bool) [313]
+                0.00    0.00     578/15936       ImHash(void const*, int, unsigned int) [256]
+-----------------------------------------------
+                0.00    0.00     289/289         BeginPopupEx(char const*, int) [16]
+[314]    0.0    0.00    0.00     289         ImGui::PushStyleVar(int, float) [314]
+-----------------------------------------------
+                0.00    0.00     289/289         ImGui::InputTextEx(char const*, char*, int, ImVec2 const&, int, int (*)(ImGuiTextEditCallbackData*), void*) [25]
+[315]    0.0    0.00    0.00     289         ImGui::CalcItemWidth() [315]
+-----------------------------------------------
+                0.00    0.00     289/289         ImGui::InputTextEx(char const*, char*, int, ImVec2 const&, int, int (*)(ImGuiTextEditCallbackData*), void*) [25]
+[316]    0.0    0.00    0.00     289         ImGui::FocusableItemRegister(ImGuiWindow*, bool, bool) [316]
+-----------------------------------------------
+                0.00    0.00     289/289         fs(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char const*) [5]
+[317]    0.0    0.00    0.00     289         ImGui::EndPopup() [317]
+                0.00    0.00     289/1897        ImGui::End() [289]
+-----------------------------------------------
+                0.00    0.00       1/289         main [2]
+                0.00    0.00     288/289         fs(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char const*) [5]
+[318]    0.0    0.00    0.00     289         ImGui::OpenPopup(char const*) [318]
+-----------------------------------------------
+                0.00    0.00      22/48          ImTextStrFromUtf8(unsigned short*, int, char const*, char const*, char const**) [clone .constprop.167] [370]
+                0.00    0.00      26/48          ImFileOpen(char const*, char const*) [325]
+[319]    0.0    0.00    0.00      48         ImTextCharFromUtf8(unsigned int*, char const*, char const*) [319]
+-----------------------------------------------
+                0.00    0.00       1/21          ImGui::VSliderFloat(char const*, ImVec2 const&, float*, float, float, char const*, float) [15]
+                0.00    0.00       1/21          ImGui::EndFrame() [13]
+                0.00    0.00       4/21          ClosePopupToLevel(int) [431]
+                0.00    0.00       4/21          ImGui::Selectable(char const*, bool, int, ImVec2 const&) [8]
+                0.00    0.00       5/21          ImGui::ButtonBehavior(ImRect const&, unsigned int, bool*, bool*, int) [271]
+                0.00    0.00       6/21          ImGui::Begin(char const*, bool*, ImVec2 const&, float, int) [3]
+[320]    0.0    0.00    0.00      21         ImGui::FocusWindow(ImGuiWindow*) [320]
+-----------------------------------------------
+                0.00    0.00       1/5           ImGuiTextFilter::ImGuiTextFilter(char const*) [346]
+                0.00    0.00       4/5           fs(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char const*) [5]
+[321]    0.0    0.00    0.00       5         ImGuiTextFilter::Build() [321]
+                0.00    0.00       5/5           ImGuiTextFilter::TextRange::split(char, ImVector<ImGuiTextFilter::TextRange>&) [322]
+-----------------------------------------------
+                0.00    0.00       5/5           ImGuiTextFilter::Build() [321]
+[322]    0.0    0.00    0.00       5         ImGuiTextFilter::TextRange::split(char, ImVector<ImGuiTextFilter::TextRange>&) [322]
+-----------------------------------------------
+                0.00    0.00       1/4           ImGui::Shutdown() [347]
+                0.00    0.00       3/4           ImDrawList::~ImDrawList() [327]
+[323]    0.0    0.00    0.00       4         ImDrawList::ClearFreeMemory() [323]
+                0.00    0.00      21/1190        ImGui::MemFree(void*) [296]
+-----------------------------------------------
+                0.00    0.00       4/4           ImGui::Selectable(char const*, bool, int, ImVec2 const&) [8]
+[324]    0.0    0.00    0.00       4         ImGui::CloseCurrentPopup() [324]
+-----------------------------------------------
+                0.00    0.00       1/3           SaveIniSettingsToDisk(char const*) [463]
+                0.00    0.00       1/3           ImFileLoadToMemory(char const*, char const*, int*, int) [330]
+                0.00    0.00       1/3           ImGui::Shutdown() [347]
+[325]    0.0    0.00    0.00       3         ImFileOpen(char const*, char const*) [325]
+                0.00    0.00      26/48          ImTextCharFromUtf8(unsigned int*, char const*, char const*) [319]
+-----------------------------------------------
+                0.00    0.00       3/3           ImGuiWindow::ImGuiWindow(char const*) [32]
+[326]    0.0    0.00    0.00       3         ImDrawList::ImDrawList() [326]
+                0.00    0.00       3/2704        ImDrawList::Clear() [280]
+-----------------------------------------------
+                0.00    0.00       3/3           ImGuiWindow::~ImGuiWindow() [328]
+[327]    0.0    0.00    0.00       3         ImDrawList::~ImDrawList() [327]
+                0.00    0.00       3/4           ImDrawList::ClearFreeMemory() [323]
+-----------------------------------------------
+                0.00    0.00       3/3           ImGui::Shutdown() [347]
+[328]    0.0    0.00    0.00       3         ImGuiWindow::~ImGuiWindow() [328]
+                0.00    0.00       3/3           ImDrawList::~ImDrawList() [327]
+-----------------------------------------------
+                0.00    0.00       3/3           ImGui::Shutdown() [347]
+[329]    0.0    0.00    0.00       3         ImGuiDrawContext::~ImGuiDrawContext() [329]
+-----------------------------------------------
+                0.00    0.00       1/1           ImGui::NewFrame() [7]
+[330]    0.0    0.00    0.00       1         ImFileLoadToMemory(char const*, char const*, int*, int) [330]
+                0.00    0.00       1/3           ImFileOpen(char const*, char const*) [325]
+-----------------------------------------------
+                0.00    0.00       1/1           main [2]
+[331]    0.0    0.00    0.00       1         ImGui_ImplGlfwGL3_Init(GLFWwindow*, bool) [331]
+                0.00    0.00       1/1611        ImGui::GetIO() [292]
+-----------------------------------------------
+                0.00    0.00       1/1           ImGui_ImplGlfwGL3_CreateDeviceObjects() [333]
+[332]    0.0    0.00    0.00       1         ImGui_ImplGlfwGL3_CreateFontsTexture() [332]
+                0.00    0.00       1/1611        ImGui::GetIO() [292]
+                0.00    0.00       1/1           ImFontAtlas::GetTexDataAsRGBA32(unsigned char**, int*, int*, int*) [339]
+-----------------------------------------------
+                0.00    0.00       1/1           ImGui_ImplGlfwGL3_NewFrame() [6]
+[333]    0.0    0.00    0.00       1         ImGui_ImplGlfwGL3_CreateDeviceObjects() [333]
+                0.00    0.00       1/1           ImGui_ImplGlfwGL3_CreateFontsTexture() [332]
+-----------------------------------------------
+                0.00    0.00       1/1           main [2]
+[334]    0.0    0.00    0.00       1         ImGui_ImplGlfwGL3_InvalidateDeviceObjects() [334]
+                0.00    0.00       1/1611        ImGui::GetIO() [292]
+-----------------------------------------------
+                0.00    0.00       1/1           measure(histogram&, int) [1]
+[335]    0.0    0.00    0.00       1         dirlist[abi:cxx11](char const*, int) [335]
+                0.00    0.00       5/1450        void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_emplace_back_aux<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&) [295]
+-----------------------------------------------
+                0.00    0.00       1/1           ImGui::Shutdown() [347]
+[336]    0.0    0.00    0.00       1         ImFontAtlas::ClearFonts() [336]
+                0.00    0.00       5/1190        ImGui::MemFree(void*) [296]
+-----------------------------------------------
+                0.00    0.00       1/1           ImFontAtlas::GetTexDataAsRGBA32(unsigned char**, int*, int*, int*) [339]
+[337]    0.0    0.00    0.00       1         ImFontAtlas::AddFontDefault(ImFontConfig const*) [337]
+                0.00    0.00       1/1           ImFontAtlas::AddFontFromMemoryCompressedBase85TTF(char const*, float, ImFontConfig const*, unsigned short const*) [342]
+-----------------------------------------------
+                0.00    0.00       1/1           ImFontAtlas::Clear() [344]
+[338]    0.0    0.00    0.00       1         ImFontAtlas::ClearInputData() [338]
+                0.00    0.00       2/1190        ImGui::MemFree(void*) [296]
+-----------------------------------------------
+                0.00    0.00       1/1           ImGui_ImplGlfwGL3_CreateFontsTexture() [332]
+[339]    0.0    0.00    0.00       1         ImFontAtlas::GetTexDataAsRGBA32(unsigned char**, int*, int*, int*) [339]
+                0.00    0.00       1/1154        ImGui::MemAlloc(unsigned long long) [297]
+                0.00    0.00       1/1           ImFontAtlas::Build() [343]
+                0.00    0.00       1/1           ImFontAtlas::AddFontDefault(ImFontConfig const*) [337]
+-----------------------------------------------
+                0.00    0.00       1/1           ImFontAtlas::Build() [343]
+[340]    0.0    0.00    0.00       1         ImFontAtlas::RenderCustomTexData(int, void*) [340]
+-----------------------------------------------
+                0.00    0.00       1/1           ImFontAtlas::AddFontFromMemoryCompressedBase85TTF(char const*, float, ImFontConfig const*, unsigned short const*) [342]
+[341]    0.0    0.00    0.00       1         ImFontAtlas::AddFontFromMemoryCompressedTTF(void const*, int, float, ImFontConfig const*, unsigned short const*) [341]
+                0.00    0.00    2321/39004       ImGui::Columns(int, char const*, bool) [254]
+                0.00    0.00       1/1154        ImGui::MemAlloc(unsigned long long) [297]
+                0.00    0.00       1/1           ImFontAtlas::AddFont(ImFontConfig const*) [345]
+-----------------------------------------------
+                0.00    0.00       1/1           ImFontAtlas::AddFontDefault(ImFontConfig const*) [337]
+[342]    0.0    0.00    0.00       1         ImFontAtlas::AddFontFromMemoryCompressedBase85TTF(char const*, float, ImFontConfig const*, unsigned short const*) [342]
+                0.00    0.00       1/1154        ImGui::MemAlloc(unsigned long long) [297]
+                0.00    0.00       1/1           ImFontAtlas::AddFontFromMemoryCompressedTTF(void const*, int, float, ImFontConfig const*, unsigned short const*) [341]
+                0.00    0.00       1/1190        ImGui::MemFree(void*) [296]
+-----------------------------------------------
+                0.00    0.00       1/1           ImFontAtlas::GetTexDataAsRGBA32(unsigned char**, int*, int*, int*) [339]
+[343]    0.0    0.00    0.00       1         ImFontAtlas::Build() [343]
+                0.00    0.00   22424/39004       ImGui::Columns(int, char const*, bool) [254]
+                0.00    0.00    1101/1190        ImGui::MemFree(void*) [296]
+                0.00    0.00     877/1154        ImGui::MemAlloc(unsigned long long) [297]
+                0.00    0.00       1/1           ImFont::BuildLookupTable() [348]
+                0.00    0.00       1/1           ImFontAtlas::RenderCustomTexData(int, void*) [340]
+-----------------------------------------------
+                0.00    0.00       1/1           ImGui::Shutdown() [347]
+[344]    0.0    0.00    0.00       1         ImFontAtlas::Clear() [344]
+                0.00    0.00       2/1190        ImGui::MemFree(void*) [296]
+                0.00    0.00       1/1           ImFontAtlas::ClearInputData() [338]
+-----------------------------------------------
+                0.00    0.00       1/1           ImFontAtlas::AddFontFromMemoryCompressedTTF(void const*, int, float, ImFontConfig const*, unsigned short const*) [341]
+[345]    0.0    0.00    0.00       1         ImFontAtlas::AddFont(ImFontConfig const*) [345]
+                0.00    0.00       3/1154        ImGui::MemAlloc(unsigned long long) [297]
+                0.00    0.00       2/1190        ImGui::MemFree(void*) [296]
+                0.00    0.00       1/1           ImFont::ImFont() [350]
+-----------------------------------------------
+                0.00    0.00       1/1           fs(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char const*) [5]
+[346]    0.0    0.00    0.00       1         ImGuiTextFilter::ImGuiTextFilter(char const*) [346]
+                0.00    0.00       1/5           ImGuiTextFilter::Build() [321]
+-----------------------------------------------
+                0.00    0.00       1/1           main [2]
+[347]    0.0    0.00    0.00       1         ImGui::Shutdown() [347]
+                0.00    0.00       3/3           ImGuiDrawContext::~ImGuiDrawContext() [329]
+                0.00    0.00       3/3           ImGuiWindow::~ImGuiWindow() [328]
+                0.00    0.00       1/1           ImFontAtlas::ClearFonts() [336]
+                0.00    0.00       1/1           ImFontAtlas::Clear() [344]
+                0.00    0.00       1/3           ImFileOpen(char const*, char const*) [325]
+                0.00    0.00       1/4           ImDrawList::ClearFreeMemory() [323]
+-----------------------------------------------
+                0.00    0.00       1/1           ImFontAtlas::Build() [343]
+[348]    0.0    0.00    0.00       1         ImFont::BuildLookupTable() [348]
+                0.00    0.00       1/1           ImFont::GrowIndex(int) [349]
+-----------------------------------------------
+                0.00    0.00       1/1           ImFont::BuildLookupTable() [348]
+[349]    0.0    0.00    0.00       1         ImFont::GrowIndex(int) [349]
+                0.00    0.00       2/1154        ImGui::MemAlloc(unsigned long long) [297]
+                0.00    0.00       2/1190        ImGui::MemFree(void*) [296]
+-----------------------------------------------
+                0.00    0.00       1/1           ImFontAtlas::AddFont(ImFontConfig const*) [345]
+[350]    0.0    0.00    0.00       1         ImFont::ImFont() [350]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2015 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+ [325] ImFileOpen(char const*, char const*) [326] ImDrawList::ImDrawList() [20] ImGui::RenderTextWrapped(ImVec2, char const*, char const*, float)
+   [4] image_select[abi:cxx11](int) [327] ImDrawList::~ImDrawList() [305] ImGui::SetNextWindowSize(ImVec2 const&, int)
+ [311] ImFormatString(char*, int, char const*, ...) [336] ImFontAtlas::ClearFonts() [277] ImGui::GetContentRegionMax()
+ [330] ImFileLoadToMemory(char const*, char const*, int*, int) [337] ImFontAtlas::AddFontDefault(ImFontConfig const*) [260] ImGui::IsMouseHoveringRect(ImVec2 const&, ImVec2 const&, bool)
+ [319] ImTextCharFromUtf8(unsigned int*, char const*, char const*) [338] ImFontAtlas::ClearInputData() [308] ImGui::ParseFormatPrecision(char const*, int)
+ [331] ImGui_ImplGlfwGL3_Init(GLFWwindow*, bool) [339] ImFontAtlas::GetTexDataAsRGBA32(unsigned char**, int*, int*, int*) [316] ImGui::FocusableItemRegister(ImGuiWindow*, bool, bool)
+   [6] ImGui_ImplGlfwGL3_NewFrame() [340] ImFontAtlas::RenderCustomTexData(int, void*) [18] ImGui::RenderCollapseTriangle(ImVec2, bool, float)
+   [5] fs(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&, char const*) [341] ImFontAtlas::AddFontFromMemoryCompressedTTF(void const*, int, float, ImFontConfig const*, unsigned short const*) [288] ImGui::ColorConvertFloat4ToU32(ImVec4 const&)
+ [252] ImGui_ImplGlfwGL3_CharCallback(GLFWwindow*, unsigned int) [342] ImFontAtlas::AddFontFromMemoryCompressedBase85TTF(char const*, float, ImFontConfig const*, unsigned short const*) [289] ImGui::End()
+ [253] ImGui_ImplGlfwGL3_ScrollCallback(GLFWwindow*, double, double) [343] ImFontAtlas::Build() [21] ImGui::Text(char const*, ...)
+ [299] ImGui_ImplGlfwGL3_RenderDrawLists(ImDrawData*) [344] ImFontAtlas::Clear() [3] ImGui::Begin(char const*, bool*, ImVec2 const&, float, int)
+ [332] ImGui_ImplGlfwGL3_CreateFontsTexture() [345] ImFontAtlas::AddFont(ImFontConfig const*) [10] ImGui::Begin(char const*, bool*, int)
+ [333] ImGui_ImplGlfwGL3_CreateDeviceObjects() [32] ImGuiWindow::ImGuiWindow(char const*) [292] ImGui::GetIO()
+ [334] ImGui_ImplGlfwGL3_InvalidateDeviceObjects() [328] ImGuiWindow::~ImGuiWindow() [284] ImGui::Image(void*, ImVec2 const&, ImVec2 const&, ImVec2 const&, ImVec4 const&, ImVec4 const&)
+ [256] ImHash(void const*, int, unsigned int) [24] ImGuiTextFilter::Draw(char const*, float) [306] ImGui::Button(char const*, ImVec2 const&)
+ [335] dirlist[abi:cxx11](char const*, int) [321] ImGuiTextFilter::Build() [11] ImGui::Render()
+   [1] measure(histogram&, int) [322] ImGuiTextFilter::TextRange::split(char, ImVector<ImGuiTextFilter::TextRange>&) [254] ImGui::Columns(int, char const*, bool)
+  [27] stbi__idct_simd(unsigned char*, int, short*) [346] ImGuiTextFilter::ImGuiTextFilter(char const*) [261] ImGui::ItemAdd(ImRect const&, unsigned int const*)
+  [28] stbi__YCbCr_to_RGB_simd(unsigned char*, unsigned char const*, unsigned char const*, unsigned char const*, int, int) [329] ImGuiDrawContext::~ImGuiDrawContext() [296] ImGui::MemFree(void*)
+  [29] stbi__jpeg_decode_block(stbi__jpeg*, short*, stbi__huffman*, stbi__huffman*, short*, int, unsigned short*) [304] ImGui::BeginPopup(char const*) [12] ImGui::ButtonEx(char const*, ImVec2 const&, int)
+  [30] stbi__grow_buffer_unsafe(stbi__jpeg*) [8] ImGui::Selectable(char const*, bool, int, ImVec2 const&) [13] ImGui::EndFrame()
+ [300] ImDrawData::ScaleClipRects(ImVec2 const&) [14] ImGui::VSliderInt(char const*, ImVec2 const&, int*, int, int, char const*) [317] ImGui::EndPopup()
+ [263] ImDrawList::AddDrawCmd() [26] ImGui::CloseButton(unsigned int, ImVec2 const&, float) [262] ImGui::ItemSize(ImVec2 const&, float)
+ [312] ImDrawList::AddPolyline(ImVec2 const*, int, unsigned int, bool, float, bool) [320] ImGui::FocusWindow(ImGuiWindow*) [297] ImGui::MemAlloc(unsigned long long)
+ [286] ImDrawList::PopClipRect() [283] ImGui::GetColorU32(ImVec4 const&) [7] ImGui::NewFrame()
+ [255] ImDrawList::PrimReserve(int, int) [25] ImGui::InputTextEx(char const*, char*, int, ImVec2 const&, int, int (*)(ImGuiTextEditCallbackData*), void*) [279] ImGui::SameLine(float, float)
+ [273] ImDrawList::PushClipRect(ImVec2, ImVec2, bool) [313] ImGui::OpenPopupEx(char const*, bool) [347] ImGui::Shutdown()
+ [272] ImDrawList::AddRectFilled(ImVec2 const&, ImVec2 const&, unsigned int, float, int) [287] ImGui::PopClipRect() [268] ImGui::IsHovered(ImRect const&, unsigned int, bool)
+ [257] ImDrawList::PathArcToFast(ImVec2 const&, float, int, int) [291] ImGui::RenderFrame(ImVec2, ImVec2, unsigned int, bool, float) [290] ImGui::LogFinish()
+ [281] ImDrawList::PushTextureID(void* const&) [310] ImGui::RoundScalar(float, int) [318] ImGui::OpenPopup(char const*)
+ [270] ImDrawList::UpdateClipRect() [298] ImGui::CalcItemSize(ImVec2, float, float) [348] ImFont::BuildLookupTable()
+ [301] ImDrawList::AddCircleFilled(ImVec2 const&, float, unsigned int, int) [294] ImGui::CalcTextSize(char const*, char const*, bool, float) [349] ImFont::GrowIndex(int)
+ [323] ImDrawList::ClearFreeMemory() [309] ImGui::IsKeyPressed(int, bool) [350] ImFont::ImFont()
+ [266] ImDrawList::UpdateTextureID() [274] ImGui::PushClipRect(ImVec2 const&, ImVec2 const&, bool) [258] ImVector<ImVec2>::push_back(ImVec2 const&)
+ [293] ImDrawList::AddTriangleFilled(ImVec2 const&, ImVec2 const&, ImVec2 const&, unsigned int) [314] ImGui::PushStyleVar(int, float) [285] ImVector<ImGuiWindow*>::push_back(ImGuiWindow* const&)
+ [265] ImDrawList::AddConvexPolyFilled(ImVec2 const*, int, unsigned int, bool) [15] ImGui::VSliderFloat(char const*, ImVec2 const&, float*, float, float, char const*, float) [278] ImGuiTextFilter::PassFilter(char const*, char const*) const
+ [302] ImDrawList::PushClipRectFullScreen() [315] ImGui::CalcItemWidth() [269] ImFont::RenderText(ImDrawList*, float, ImVec2, unsigned int, ImVec4 const&, char const*, char const*, float, bool) const
+ [280] ImDrawList::Clear()   [271] ImGui::ButtonBehavior(ImRect const&, unsigned int, bool*, bool*, int) [267] ImFont::CalcTextSizeA(float, float, float, char const*, char const*, char const**) const
+ [307] ImDrawList::AddRect(ImVec2 const&, ImVec2 const&, unsigned int, float, int, float) [23] ImGui::SliderBehavior(ImRect const&, unsigned int, float*, float, float, float, int, int) [276] void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::emplace_back<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&)
+ [264] ImDrawList::AddText(ImFont const*, float, ImVec2 const&, unsigned int, char const*, char const*, float, ImVec4 const*) [19] ImGui::TextUnformatted(char const*, char const*) [295] void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_emplace_back_aux<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > >(std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >&&)
+ [282] ImDrawList::AddImage(void*, ImVec2 const&, ImVec2 const&, ImVec2 const&, ImVec2 const&, unsigned int) [17] ImGui::FindWindowByName(char const*) [259] __gcc_deregister_frame
+ [275] ImDrawList::PathRect(ImVec2 const&, ImVec2 const&, float, int) [324] ImGui::CloseCurrentPopup() [34] stbi_zlib_decode_malloc_guesssize_headerflag
+ [303] ImDrawList::PathArcTo(ImVec2 const&, float, float, float, int) [9] ImGui::RenderTextClipped(ImVec2 const&, ImVec2 const&, char const*, char const*, ImVec2 const*, ImVec2 const&, ImRect const*)
