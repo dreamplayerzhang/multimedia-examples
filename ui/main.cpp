@@ -21,7 +21,7 @@ int main()
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
     // Create Window and init glew
-    GLFWwindow* window = glfwCreateWindow(950,500, "Transtion Function", NULL, NULL);
+    GLFWwindow* window = glfwCreateWindow(950,500, "Demo 1", NULL, NULL);
     glfwMakeContextCurrent(window);
     glewInit();
 
@@ -33,30 +33,29 @@ int main()
 
     while (!glfwWindowShouldClose(window)) {
 
-    // user events such as clicking, typing, and moving cursor
-         	glfwPollEvents();
-    ImGui_ImplGlfwGL3_NewFrame();
+        // user events such as clicking, typing, and moving cursor
+        glfwPollEvents();
+        ImGui_ImplGlfwGL3_NewFrame();
 
-    // UI components
-    ImGui::Begin("any window title");
-    if (ImGui::Button("CLICK ME"))
-    	x++;
-    ImGui::Text("X: %d", x);
-    ImGui::End();
+        // UI components
+        ImGui::Begin("any window title");
+        if (ImGui::Button("CLICK ME"))
+            x++;
+        ImGui::Text("X: %d", x);
+        ImGui::End();
 
-    // window size
-    int display_w, display_h;
-    glfwGetFramebufferSize(window, &display_w, &display_h);
+        // window size
+        int display_w, display_h;
+        glfwGetFramebufferSize(window, &display_w, &display_h);
 
-    // clear the screen
-    glViewport(0, 0, display_w, display_h);
-    glClearColor(clear_color.x, clear_color.y, clear_color.z, clear_color.w);
-    glClear(GL_COLOR_BUFFER_BIT);
+        // clear the screen
+        glViewport(0, 0, display_w, display_h);
+        glClearColor(clear_color.x, clear_color.y, clear_color.z, clear_color.w);
+        glClear(GL_COLOR_BUFFER_BIT);
 
-    // finally render
-    ImGui::Render();
-    glfwSwapBuffers(window);
-
+        // finally render
+        ImGui::Render();
+        glfwSwapBuffers(window);
     }
     // Cleanup
     ImGui_ImplGlfwGL3_Shutdown();

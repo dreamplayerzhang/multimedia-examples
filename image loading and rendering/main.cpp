@@ -51,6 +51,7 @@ int main()
     // Create Window and init glew
     GLFWwindow* window = glfwCreateWindow(950,500, "Example Program", NULL, NULL);
     glfwMakeContextCurrent(window);
+
     glewInit();
 
     // Setup ImGui binding
@@ -67,20 +68,24 @@ int main()
         ImGui::Begin("Slider Window");
         // Image A
         ImGui::BeginGroup();
-        if (a.texture_loaded)
-            ImGui::Image((void*)a.texture, resize_ui(a.width, a.height, MAX_SIDE_SIZE));
-        if (ImGui::Button("Select Image"))
-            ImGui::OpenPopup("select 0");
-        std::string tmp = image_select(0); //opens the file list and assigns to tmp
-        if (tmp != "") {
-            fname = tmp;
-            reset_image(&a);
-            a.pixels = stbi_load(fname.c_str(), &a.width, &a.height, &a.n, RGBA);
-            texture_image(&a);
-            free_image(&a);
-        }
+
+            if (a.texture_loaded)
+                ImGui::Image((void*)a.texture, resize_ui(a.width, a.height, MAX_SIDE_SIZE));
+                
+            if (ImGui::Button("Select Image"))
+                ImGui::OpenPopup("select 0");
+
+            std::string tmp = image_select(0); //opens the file list and assigns to tmp
+
+            if (tmp != "") {
+                fname = tmp;
+                reset_image(&a);
+                a.pixels = stbi_load(fname.c_str(), &a.width, &a.height, &a.n, RGBA);
+                texture_image(&a);
+                free_image(&a);
+            }
+
         ImGui::EndGroup();
-        ImGui::SameLine();
         ImGui::End();
 
         // Gl Rendering
