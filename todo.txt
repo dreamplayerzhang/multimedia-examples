@@ -1,0 +1,4 @@
+average - car 4
+embed - y_ratio = 2.1
+print embed
+if time show grayscale

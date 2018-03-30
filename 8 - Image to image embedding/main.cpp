@@ -52,9 +52,9 @@ void embed(Image* a, Image* b, Image* r, ImVec2 pos)
     memcpy(r->pixels, a->pixels, r->width * r->height * RGBA); // copies pixel conetents of a to r
 
     ImVec2 ui_size = resize_ui(r->width, r->height, MAX_SIDE_LENGTH);// resizes image for user interface view aad and syncs mouse location to image placement
-    ImVec2 n (r->width / ui_size.x, r->height / ui_size.y); // actual size and displayed size ratio
+    ImVec2 ratio (r->width / ui_size.x, r->height / ui_size.y); // actual size and displayed size ratio
 
-    int y_r = n.y * pos.y; //gets actual location mouse points to through the actual size to display ration and position of mouse on displayed image for height
+    int y_r = ratio.y * pos.y; //gets actual location mouse points to through the actual size to display ration and position of mouse on displayed image for height
 
     // for loop begins at directed postion y_r on image r(that has contents of image a but different location in memory) and rewrites pixel vaules on r from image b
     for(int y_b = 0; y_r < r->height && y_b < b->height; y_r++, y_b++) {
@@ -62,7 +62,7 @@ void embed(Image* a, Image* b, Image* r, ImVec2 pos)
         uint8* r_row =  r->pixels + (y_r * r->width * RGBA); //itterates through r
         uint8* b_row =  b->pixels + (y_b * b->width * RGBA); //itterates through b
 
-        int x_r = n.x * pos.x; //gets actual location mouse points to through the actual size to display ration and position of mouse on displayed image for width
+        int x_r = ratio.x * pos.x; //gets actual location mouse points to through the actual size to display ration and position of mouse on displayed image for width
         // for loop begins at directed postion x_r on image r(that has contents of image a but different location in memory) and rewrites pixel vaules on r from image b
         for(int x_b = 0; x_r < r->width && x_b < b->width; x_r++, x_b++) {
 
@@ -85,9 +85,9 @@ void resize_image(Image* img, int new_w, int new_h)
     float w_ratio = (float)new_w / img->width; // ratio dictates how many pixels to copy from original image per pixel in width
     float h_ratio = (float)new_h / img->height; // ratio dictates how many pixels to copy from original image per pixel in height
 
-    int max_x_repeat = w_ratio <= 1.0 ? 1 : w_ratio + 1.0;
+    int max_x_repeat = w_ratio <= 1.0 ? 1 : w_ratio + 1.0; // if ratio is 2.3, then round up to 3, hence + 1
     int max_y_repeat = h_ratio <= 1.0 ? 1 : h_ratio + 1.0;
-    //if the ratio is less than or equal to one, then the max number of times the pixel can be repeated is once,
+    //if the ratio is less than or equal to one, then the max number of times the pixel can be repeated is once`,
     //else it can be repeated more than once, specifically determined by the ratio
 
     for(int y=0; y < img->height; y++) {

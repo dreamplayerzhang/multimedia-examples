@@ -67,6 +67,7 @@ topn(const int* freq, int* comp, int a_len, int b_len)
     }
 }
 
+// maybe try interpolation
 int closest(int* a, int len, int m)
 {
     int* x = std::lower_bound(a, a+len, m); //binary search
