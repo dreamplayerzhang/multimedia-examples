@@ -27,15 +27,6 @@
 #define BIT_RANGE(val, s, f) (((val) &= (1 << (s)) - 1) >> ((s) - (f)))
 #define DIFF(a, b) (abs((a) - (b)))
 
-ImVec2 resize(int x, int y)
-{
-    if (x > MAX_SIDE && y > MAX_SIDE) {
-        float d = (x > y ? x : y) / MAX_SIDE;
-        return ImVec2( x/d, y/d );
-    }
-    return ImVec2(x, y);
-}
-
 // Local functions
 static ImGuiWindowFlags static_window();
 static void error_callback(int error, const char* description);
@@ -138,6 +129,7 @@ int main()
                 texture_image(&a);
             }
 
+            //slider moved
             if (prev_gray_trans != gray_trans) {
                 reset_texture(&a);
                 memcpy(a.pixels, orig.pixels, a.width*a.height*RGBA);
