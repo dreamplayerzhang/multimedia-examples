@@ -17,9 +17,6 @@
 #include <string>
 #include <algorithm>
 
-// Local functions
-static void error_callback(int error, const char* description);
-
 int main ()
 {
   Image a;
@@ -144,9 +141,6 @@ int main ()
     ImGui_ImplGlfwGL3_Shutdown();
     glfwTerminate();
     return 0;
+  }
 }
 
-static void error_callback(int error, const char* description)
-{
-  fprintf(stderr, "Error %d: %s\n", error, description);
-}

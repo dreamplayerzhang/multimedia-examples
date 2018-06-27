@@ -27,8 +27,6 @@
 
 #define MAX_SIDE 400
 
-static void error_callback(int error, const char* description);
-
 // if thres is greater than zero, use RGB value to check difference
 // else use color coding with n bits
 void highlight_different(Image img, int thres, int n)
@@ -195,7 +193,3 @@ while (!glfwWindowShouldClose(window)) {
     return 0;
 }
 
-static void error_callback(int error, const char* description)
-{
-    fprintf(stderr, "Error %d: %s\n", error, description);
-}

@@ -9,12 +9,6 @@
 
 #define MAX_SIDE_SIZE 350
 
-static void error_callback(int error, const char* description)
-{
-    fprintf(stderr, "Error %d: %s\n", error, description);
-}
-
-
 int main()
 {
     Image a;

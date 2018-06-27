@@ -9,7 +9,7 @@ IMGUI = $(INC)/imgui/imgui.cpp $(INC)/imgui/imgui_draw.cpp
 OPT = -O3
 
 all:
-	 g++ $(OPT) -std=c++11 main.cpp $(IMGUI) -I $(INC) $(DLL) $(LIB) -o tra
+	 g++ $(OPT) -std=c++11 main.cpp $(IMGUI) -I $(INC) $(DLL) $(LIB) -o demo
 
 asm:
 	g++ -S $(OPT) -std=c++11 main.cpp $(IMGUI) -I $(INC) $(DLL) $(LIB)

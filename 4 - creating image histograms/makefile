@@ -8,11 +8,11 @@ IMGUI = $(INC)/imgui/imgui.cpp $(INC)/imgui/imgui_draw.cpp $(INC)/imgui/imgui_de
 OPT = -O0
 
 all:
-	g++ $(OPT) -std=c++11 main.cpp $(IMGUI) -I $(INC) $(DLL) $(LIB) -o histo.exe
+	g++ $(OPT) -std=c++11 main.cpp $(IMGUI) -I $(INC) $(DLL) $(LIB) -o demo.exe
 
 profile:
-	g++ -pg $(OPT) -std=c++11 main.cpp $(IMGUI) -I $(INC) $(DLL) $(LIB) -o histo
-	./histo.exe && gprof histo.exe gmon.out > analysis.txt
+	g++ -pg $(OPT) -std=c++11 main.cpp $(IMGUI) -I $(INC) $(DLL) $(LIB) -o demo
+	./demo.exe && gprof demo.exe gmon.out > analysis.txt
 
 asm:
 	g++ -S $(OPT) -std=c++11 main.cpp $(IMGUI) -I $(INC) $(DLL) $(LIB)
